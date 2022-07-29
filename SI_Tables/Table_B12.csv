@@ -1,0 +1,359 @@
+Name,CAS,Conc,Effecti,AC10µM,pi,Endpoint(s)
+Tetrabutylammonium bromide,1643-19-2,7.06E-07,1.21E-06,5.850630427,2.87E-06,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+1-Hexyl-3-methylimidazolium bromide,85100-78-3,0,0,1.78268148,0,TOX21_AR_BLA_Antagonist_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+1-Benzylquinolinium chloride,15619-48-4,1.44E-08,1.30E-07,1.105812573,5.85E-08,NVS_GPCR_gMPeripheral_NonSelective|NVS_GPCR_gOpiateK|NVS_GPCR_hM2|NVS_GPCR_hM4|NVS_GPCR_hM5|NVS_GPCR_rAdra1A|NVS_GPCR_rmAdra2B|NVS_IC_rNaCh_site2|NVS_TR_gDAT|NVS_TR_hDAT
+"1,1-Dimethylpiperidinium chloride",24307-26-4,3.17E-07,2.19E-06,1.447630182,1.29E-06,NVS_LGIC_rNNR_BungSens
+1-Benzyl-3-methylimidazolium chloride,36443-80-8,4.33E-08,4.72E-08,9.167265169,1.75E-07,TOX21_RT_HEK293_GLO_40hr_viability
+Bethanechol chloride,590-63-6,1.30E-07,6.59E-07,1.969526232,5.26E-07,TOX21_RT_HEPG2_FLO_08hr_viability|TOX21_RT_HEPG2_FLO_16hr_ctrl_viability
+Dodecyltrimethylammonium chloride,112-00-5,0,0,1.033433719,0,NVS_ENZ_rMAOBC|NVS_GPCR_gMPeripheral_NonSelective|NVS_GPCR_hDRD1|NVS_GPCR_hDRD2s|NVS_GPCR_hM1|NVS_GPCR_hM2|NVS_GPCR_hM3|NVS_GPCR_hM4|NVS_GPCR_hM5|NVS_IC_hKhERGCh|NVS_IC_rCaBTZCHL|NVS_IC_rNaCh_site2|NVS_TR_hNET|NVS_TR_rSERT
+Benzyldimethyldodecylammonium chloride,139-07-1,0,0,3.946522775,0,ATG_XTT_Cytotoxicity_up|TOX21_ARE_BLA_agonist_viability|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_CASP3_CHO_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_ESRE_BLA_viability|TOX21_HSE_BLA_agonist_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PPARd_BLA_antagonist_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_PR_BLA_Agonist_viability|TOX21_RT_HEK293_FLO_32hr_viability|TOX21_RT_HEK293_FLO_40hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_FLO_40hr_ctrl_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_RT_HEPG2_GLO_40hr_viability|TOX21_VDR_BLA_antagonist_viability
+Methylene blue,61-73-4,2.88E-08,9.11E-07,0.316630152,1.17E-07,TOX21_MMP_rhodamine
+Colchicine,64-86-8,5.41E-06,0.016220086,0.003333333,2.19E-05,CCTE_Mundy_HCI_Cortical_NOG_BPCount_loss|CCTE_Mundy_HCI_Cortical_NOG_NeuriteCount_loss|CCTE_Mundy_HCI_Cortical_NOG_NeuriteLength_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_BPCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_CellBodySpotCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteLength_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteSpotCountPerNeuron_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuronCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_SynapseCount_loss|CCTE_Mundy_HCI_hN2_NOG_NeuriteCount_loss|CCTE_Mundy_HCI_hN2_NOG_NeuronCount_loss|CCTE_Mundy_HCI_hNP1_Casp3_7_gain|MFR|BR|ISI|%SiB|BD|IBI|#AE|#ABE|#NS|NSP|NSD|%SiNS|NS-ISI|NSDsd|#SiNS|r|MI|CNS neurite outgrowth|SH-S5Y5 neurite outgrowth
+Betamethasone,378-44-9,7.21E-08,2.93E-05,0.024637565,2.92E-07,TOX21_HRE_BLA_Agonist_viability|TOX21_RT_HEPG2_GLO_00hr_ctrl_viability
+Estrone,53-16-7,8.36E-07,5.77E-06,1.449160545,3.39E-06,BSK_hDFCGF_Proliferation_down|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Stilonium iodide,77257-42-2,8.65E-08,2.53E-07,3.413901219,3.51E-07,TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability
+"1-Butyl-2,3-dimethylimidazolium iodide",108203-70-9,4.53E-06,1.31E-05,3.461405541,1.84E-05,TOX21_RT_HEPG2_GLO_40hr_viability
+Maneb,12427-38-2,4.33E-08,0.000129761,0.003333333,1.75E-07,NS-ISI
+Imidacloprid,138261-41-3,1.44E-08,2.99E-07,0.481811238,5.85E-08,NVS_LGIC_hNNR_NBungSens|#SiNS|SH-S5Y5 neurite outgrowth
+"1,3-Dinitrobenzene",99-65-0,1.73E-06,8.10E-05,0.213528586,7.02E-06,NVS_ENZ_rMAOAC|NVS_ENZ_rMAOAP|NVS_ENZ_rMAOBC|NVS_ENZ_rMAOBP
+4-Nitropyridine-1-oxide,1124-33-0,3.39E-06,3.44E-06,9.841984056,1.37E-05,TOX21_CASP3_CHO_viability|TOX21_ERb_BLA_Agonist_viability
+"1,4-Dinitrobenzene",100-25-4,2.46E-05,2.77E-05,8.894755112,9.99E-05,BSK_3C_Proliferation_down|BSK_SAg_Proliferation_down|BSK_hDFCGF_Proliferation_down|TOX21_CASP3_CHO_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_PXR_viability
+"1-Fluoro-2,4-dinitrobenzene",70-34-8,3.24E-06,9.38E-05,0.345668907,1.32E-05,TOX21_MMP_ratio_down
+"1,8-Dinitronaphthalene",602-38-0,3.60E-06,1.74E-05,2.07127786,1.46E-05,TOX21_MMP_rhodamine
+1-Methyl-3-hexylimidazolium trifluoromethylsulfonate,460345-16-8,0,0,3.955792954,0,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CAR_Agonist_viabillity|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Brolamfetamine hydrobromide,53581-53-6,1.44E-08,3.15E-08,4.581034558,5.85E-08,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+Pentabromoethane,75-95-6,5.77E-07,3.86E-07,14.95194107,2.34E-06,TOX21_HRE_BLA_Agonist_viability
+"2,2',4,4',5-Pentabromodiphenyl ether",60348-60-9,5.27E-05,0.000993161,0.530165724,0.000213635,TOX21_MMP_fitc
+"4,4'-Dibromodiphenyl ether",2050-47-7,4.47E-06,1.60E-05,2.789455379,1.81E-05,TOX21_MMP_fitc
+"1,2,5,6,9,10-Hexabromocyclododecane",3194-55-6,0.000281148,0.000487897,5.762451059,0.001140712,TOX21_CASP3_CHO_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_PR_BLA_Agonist_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RXR_BLA_Agonist_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p3_viability
+"1,2-Dibromo-2,4-dicyanobutane",35691-65-7,2.74E-07,1.29E-06,2.116272395,1.11E-06,NVS_GPCR_hDRD1|NVS_GPCR_hORL1|NVS_TR_gDAT
+"1,2-Dibromo-4-(1,2-dibromoethyl)cyclohexane",3322-93-8,2.67E-06,3.52E-06,7.570879236,1.08E-05,TOX21_MMP_ratio_down
+N-Benzyladenine,1214-39-7,3.15E-05,2.28E-05,13.81390566,0.000127701,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+4-(Diglycidylamino)phenyl glycidyl ether,5026-74-4,0,0,7.620650531,0,TOX21_PXR_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Rutin,153-18-4,3.14E-06,3.48E-06,9.044745574,1.28E-05,TOX21_PGC_ERR_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Cantharidin,56-25-7,1.44E-08,4.39E-06,0.032846803,5.85E-08,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+alpha-Tomatine,17406-45-0,3.91E-06,4.47E-05,0.874176502,1.59E-05,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+Paraquat,4685-14-7,3.81E-06,0.005229127,0.007279062,1.54E-05,SH-S5Y5 viability
+"2E,4E-Hexadienoic acid",110-44-1,2.60E-05,3.34E-05,7.786076862,0.000105647,APR_HepG2_MitoMass_72h_up
+"(2,4,6-Trioxo-1,3,5-triazinane-1,3,5-triyl)triethane-2,1-diyl trisprop-2-enoate",40220-08-4,0,0,5.555487619,0,ATG_XTT_Cytotoxicity_up|TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_AhR_LUC_Agonist_viability|TOX21_CAR_Agonist_viabillity|TOX21_CASP3_CHO_viability|TOX21_ELG1_LUC_Agonist_viability|TOX21_ERR_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_FXR_BLA_antagonist_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability
+Diethylene glycol diacrylate,4074-88-8,0,0,20.31848309,0,TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_PGC_ERR_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability
+Diallyl phthalate,131-17-9,1.21E-05,4.14E-05,2.908910408,4.89E-05,NUMBER_OF_BURSTS|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|AREA_UNDER_CROSS_CORRELATION|SYNCHRONY_INDEX
+Diquat,2764-72-9,2.93E-05,7.339958922,3.99E-05,0.00011881,SH-S5Y5 neurite outgrowth
+"5,6,7,8-Tetrahydroquinoxaline",34413-35-9,4.30E-06,1.09E-05,3.957730737,1.74E-05,TOX21_RT_HEPG2_FLO_00hr_ctrl_viability|TOX21_RT_HEPG2_FLO_24hr_viability
+Mepanipyrim,110235-47-7,2.31E-07,3.30E-06,0.700036114,9.36E-07,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+3-Methylbut-3-en-1-ol,763-32-6,4.50E-05,1.44E-05,31.22547331,0.000182689,TOX21_RT_HEPG2_GLO_00hr_ctrl_viability
+Diacetone alcohol,123-42-2,8.42E-05,0.001430617,0.588760555,0.000341746,APR_HepG2_MitoMass_24h_dn
+Acenocoumarol,152-72-7,2.84E-06,1.68E-05,1.691972409,1.15E-05,TOX21_MMP_rhodamine
+Warfarin,81-81-2,1.30E-06,3.10E-06,4.180902756,5.26E-06,TOX21_MMP_ratio_down
+N-Acetyl-m-toluidine,537-92-8,2.88E-08,2.61E-08,11.05804855,1.17E-07,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+5-Nitro-2-furanmethanediol diacetate,92-55-7,4.01E-06,3.20E-06,12.53414464,1.63E-05,TOX21_Aromatase_Inhibition_viability
+Adefovir dipivoxil,142340-99-6,0,0,0.414304279,0,TOX21_CAR_Agonist_viabillity|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RXR_BLA_Agonist_viability
+Triadimenol,55219-65-3,2.45E-07,0.000181941,0.013471586,9.94E-07,NVS_TR_gDAT|NVS_TR_hDAT
+"2,6-Di-tert-butylphenol",128-39-2,3.45E-06,1.14E-06,30.21235672,1.40E-05,APR_HepG2_CellLoss_24h_dn|NCCT_HEK293T_CellTiterGLO
+Clofoctol,37693-01-9,5.39E-05,0.000772277,0.697857481,0.000218666,TOX21_MMP_rhodamine
+"4,4'-(Isopropylidenebis(4,1-phenyleneoxy))dianiline",13080-86-9,2.16E-06,3.15E-06,6.865532673,8.77E-06,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+2-Chloro-2-nitropropane,594-71-8,6.34E-07,2.35E-05,0.270032179,2.57E-06,TOX21_RT_HEPG2_GLO_00hr_ctrl_viability
+2-Acrylamido-2-methyl-1-propanesulfonic acid,15214-89-8,2.74E-06,4.77E-06,5.743103064,1.11E-05,TOX21_RT_HEPG2_FLO_00hr_ctrl_viability|TOX21_RT_HEPG2_FLO_24hr_viability|TOX21_RT_HEPG2_FLO_32hr_ctrl_viability
+Hydroxyflutamide,52806-53-8,3.39E-06,0.000244812,0.138399698,1.37E-05,APR_HepG2_MitoMass_72h_up|APR_HepG2_MitoMembPot_72h_dn|TOX21_MMP_ratio_down
+Esfenvalerate,66230-04-4,2.93E-05,0.003535801,0.082858401,0.000118868,NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Isopropamide,7492-32-2,1.01E-07,2.80E-07,3.608828296,4.09E-07,TOX21_RT_HEPG2_GLO_40hr_viability
+Allethrin,584-79-2,2.45E-07,2.84E-06,0.86320574,9.94E-07,INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|SYNCHRONY_INDEX
+Riboprine,7724-76-7,8.65E-08,5.83E-07,1.483109697,3.51E-07,TOX21_ARE_BLA_agonist_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_NFkB_BLA_agonist_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_PXR_viability|TOX21_RORg_LUC_CHO_Antagonist_viability
+"2,2,4-Trimethyl-1,3-pentanediol",144-19-4,3.32E-07,8.33E-06,0.398237968,1.35E-06,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability
+Imazapyr,81334-34-1,1.70E-06,0.005788782,0.002938972,6.90E-06,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|BURST_DURATION_AVG_ (SEC)|INTER_BURST_INTERVAL_AVG_(SEC)|NETWORK_BURST_PERCENTAGE|SYNCHRONY_INDEX
+Deethylatrazine,6190-65-4,1.92E-06,0.00429764,0.004461925,7.78E-06,SH-S5Y5 neurite outgrowth
+Oxadiazon,19666-30-9,1.31E-06,0.000907936,0.014450631,5.32E-06,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|BURST_PERCENTAGE_AVG_(SEC)|NETWORK_BURST_PERCENTAGE
+"4,4-Bis(4-hydroxyphenyl)valeric acid",126-00-1,4.18E-06,5.20E-05,0.803696955,1.70E-05,ACEA_AR_antagonist_AUC_viability
+Bicalutamide,90357-06-5,2.98E-06,0.017935289,0.001664035,1.21E-05,SH-S5Y5 viability
+"2-Methyl-2,4-pentanediol",107-41-5,0.000102886,7.12E-05,14.44782648,0.000417442,APR_HepG2_CellLoss_72h_dn|BSK_3C_Proliferation_down|BSK_hDFCGF_Proliferation_down
+Tamoxifen,10540-29-1,1.17E-06,1.18E-05,0.987795402,4.74E-06,NVS_GPCR_hDRD1|NVS_IC_rCaBTZCHL|NVS_TR_hDAT|NUMBER_OF_SPIKES|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION
+trans-Hex-3-en-1-ol,928-97-2,7.21E-08,1.29E-07,5.602680159,2.92E-07,TOX21_PR_BLA_Agonist_viability
+Clomazone,81777-89-1,0,0,0.048878912,0,NVS_TR_hDAT|SH-S5Y5 neurite outgrowth
+"5,5-Dimethyl-3-(alpha,alpha,alpha-trifluoro-4-nitro-m-tolyl)hydantoin",63612-50-0,2.97E-06,7.44E-06,3.990582101,1.21E-05,NCCT_MITO_max_resp_rate_OCR_dn|NVS_GPCR_bAdoR_NonSelective
+"2,3-Dimethylphenol",526-75-0,0,0,0.149726139,0,ACEA_AR_antagonist_AUC_viability|TOX21_RT_HEK293_FLO_08hr_viability
+Terbacil,5902-51-2,0,0,0.887543958,0,BSK_SAg_PBMCCytotoxicity_up
+4-Chloro-3-methylphenol,59-50-7,2.45E-07,0.000410784,0.005966731,9.94E-07,SH-S5Y5 viability
+Rimonabant,168273-06-1,3.04E-06,0.000102989,0.295387389,1.23E-05,TOX21_RT_HEK293_GLO_40hr_viability
+2-Amino-m-cresol,2835-97-4,4.33E-08,2.21E-09,196.0749469,1.75E-07,TOX21_RT_HEK293_GLO_40hr_viability
+"4,4'-Diamino-3,3'-dimethyldiphenylmethane",838-88-0,5.77E-08,1.70E-07,3.384765538,2.34E-07,APR_HepG2_MitoMass_72h_up|NCCT_MITO_basal_resp_rate_OCR_dn|NVS_TR_hDAT|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NETWORK_BURST_PERCENTAGE|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+4-Chloro-2-methylaniline,95-69-2,4.33E-08,1.18E-06,0.367288361,1.75E-07,ACEA_ER_AUC_viability|BSK_3C_Proliferation_down
+"2-Methyl-4,6-dinitrophenol",534-52-1,1.47E-06,1.69E-06,8.717674206,5.97E-06,APR_HepG2_CellLoss_24h_dn|APR_HepG2_CellLoss_72h_dn|APR_HepG2_MicrotubuleCSK_72h_up|BSK_SAg_PBMCCytotoxicity_up|TOX21_AR_LUC_MDAKB2_Antagonist_0.5nM_R1881_viability|TOX21_AhR_LUC_Agonist_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_CASP3_HEPG2_viability|TOX21_ELG1_LUC_Agonist_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_MMP_viability|TOX21_PXR_viability|TOX21_SSH_3T3_GLI3_Agonist_viability
+Methylhydroquinone,95-71-6,1.44E-08,9.22E-09,15.63149714,5.85E-08,TOX21_RXR_BLA_Agonist_viability|TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+"2-Methyl-1,3-benzenediol",608-25-3,2.88E-08,7.40E-07,0.38989635,1.17E-07,BSK_SAg_PBMCCytotoxicity_down|BSK_SAg_Proliferation_down
+MCPA,94-74-6,3.42E-05,0.000226151,1.510951735,0.00013864,ACEA_AR_antagonist_AUC_viability
+Tiliquinol,5541-67-3,0,0,2.135862637,0,TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Antagonist_0.5nM_R1881_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability
+"4-Methyl-2,6-dinitrophenol",609-93-8,3.56E-06,6.04E-06,5.894413689,1.44E-05,TOX21_MMP_rhodamine
+2-Methyl-4-nitroaniline,99-52-5,0,0,16.19358673,0,TOX21_AR_LUC_MDAKB2_Antagonist_0.5nM_R1881_viability|TOX21_CAR_Antagonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+"3,3'-Dimethylbenzidine",119-93-7,4.03E-05,0.000279317,1.44117971,0.000163327,ACEA_AR_antagonist_AUC_viability|BSK_SAg_Proliferation_down
+Isophorone,78-59-1,3.03E-07,0.00115696,0.002616988,1.23E-06,TOX21_RT_HEPG2_FLO_32hr_ctrl_viability
+"3,5-Dimethylpyridine",591-22-0,5.44E-06,6.02E-05,0.903567086,2.21E-05,ACEA_ER_AUC_viability
+"4,4'-Thiobis(6-tert-butyl-m-cresol)",96-69-5,0.000521638,0.000564814,9.235578222,0.002116459,TOX21_AP1_BLA_Agonist_viability|TOX21_ARE_BLA_agonist_viability|TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_ERa_BLA_Antagonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_GR_BLA_Antagonist_viability|TOX21_HSE_BLA_agonist_viability|TOX21_NFkB_BLA_agonist_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_PXR_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_SBE_BLA_Agonist_viability|TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability|TOX21_TR_LUC_GH3_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability|TOX21_VDR_BLA_antagonist_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p3_viability|TOX21_p53_BLA_p4_viability|TOX21_p53_BLA_p5_viability
+4-Methylcatechol,452-86-8,1.44E-08,7.27E-09,19.83385772,5.85E-08,TOX21_SSH_3T3_GLI3_Agonist_viability
+"3,4-Dinitrotoluene",610-39-9,3.46E-06,2.65E-05,1.303537957,1.40E-05,NVS_ENZ_rMAOAC
+Clofilium tosylate,92953-10-1,1.44E-08,1.20E-07,1.205369221,5.85E-08,TOX21_TR_RXR_BLA_Antagonist_Followup_viability
+2-Dodecylisoquinolinium tosylate,5412-37-3,1.44E-08,5.13E-08,2.810876996,5.85E-08,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_ERa_BLA_Antagonist_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+Diiodomethyl 4-methylphenyl sulfone,20018-09-1,1.07E-06,2.43E-05,0.43941901,4.33E-06,NVS_GPCR_hDRD1|NVS_TR_rVMAT2
+"3,4-Diaminotoluene",496-72-0,1.87E-07,1.79E-06,1.049892479,7.60E-07,INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|SYNCHRONY_INDEX
+C.I. Solvent Orange 7,3118-97-6,2.49E-06,1.51E-05,1.6488666,1.01E-05,BSK_SAg_Proliferation_down|TOX21_CASP3_CHO_viability|TOX21_PXR_viability
+1-Phenyl-3-methyl-5-pyrazolone,89-25-8,8.65E-08,1.27E-07,6.810060088,3.51E-07,TOX21_MMP_rhodamine
+"2,2-Dichloro-1-(3-methyl-2,3-dihydro-4H-1,4-benzoxazin-4-yl)ethanone",98730-04-2,0,0,3.141276752,0,ACEA_AR_agonist_AUC_viability|ACEA_ER_AUC_viability|BSK_3C_Proliferation_down|BSK_3C_Vis_down|BSK_CASM3C_Proliferation_down|BSK_CASM3C_SRB_down|BSK_SAg_SRB_down|BSK_hDFCGF_Proliferation_down|BSK_hDFCGF_SRB_down|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CASP3_CHO_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Flopropione,2295-58-1,0,0,2.015497245,0,TOX21_MMP_ratio_down
+Iopanoic acid,96-83-3,2.88E-06,9.21E-05,0.313173512,1.17E-05,ACEA_AR_agonist_AUC_viability
+2-Ethylphenol,90-00-6,0,0,2.906933037,0,TOX21_RT_HEK293_FLO_40hr_viability
+"2,2'-Methylenebis(ethyl-6-tert-butylphenol)",88-24-4,0.00073632,0.018888602,0.389822289,0.002987495,TOX21_MMP_rhodamine
+Enefexine,67765-04-2,8.65E-08,2.83E-07,3.053176619,3.51E-07,TOX21_PR_BLA_Agonist_viability
+Metolachlor ESA,171118-09-5,1.92E-06,9.59E-07,19.99509852,7.78E-06,TOX21_RT_HEPG2_GLO_00hr_ctrl_viability
+Imazethapyr,81335-77-5,2.88E-08,2.33E-05,0.012375674,1.17E-07,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|AREA_UNDER_CROSS_CORRELATION
+Pyrimethamine,58-14-0,0,0,0.404722448,0,NVS_GPCR_hAdra2A|NVS_GPCR_hDRD1|NVS_GPCR_rAdra1A|NVS_GPCR_rAdra1B|NVS_GPCR_rAdra1_NonSelective|NVS_GPCR_rAdra2_NonSelective|NVS_GPCR_rmAdra2B|NVS_IC_rCaBTZCHL|NVS_IC_rNaCh_site2|NVS_TR_gDAT|NVS_TR_hDAT|NVS_TR_hNET|NVS_GPCR_g5HT4|NVS_GPCR_h5HT2A|NVS_GPCR_h5HT7|NVS_GPCR_p5HT2C
+Valproic acid,99-66-1,2.88E-08,3.75E-09,76.93555562,1.17E-07,%SiNS|NSDsd|#SiNS
+6-Propyl-2-thiouracil,51-52-5,2.45E-07,0.000244335,0.010031472,9.94E-07,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|AREA_UNDER_CROSS_CORRELATION
+MEHP,4376-20-9,2.54E-06,4.07E-05,0.623781901,1.03E-05,NCCT_MITO_basal_resp_rate_OCR_dn
+gamma-Decanolactone,706-14-9,2.88E-08,2.86E-07,1.007543638,1.17E-07,ACEA_AR_antagonist_AUC_viability
+5-Heptyldihydro-2(3H)-furanone,104-67-6,7.21E-08,3.15E-07,2.288031992,2.92E-07,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|AREA_UNDER_CROSS_CORRELATION
+"N,N-Dimethyldecylamine oxide",2605-79-0,0,0,4.956387125,0,TOX21_MMP_ratio_up
+Lauryl gallate,1166-52-5,4.74E-06,2.38E-05,1.995126073,1.92E-05,TOX21_MMP_ratio_down
+Decyl beta-D-glucopyranoside,58846-77-8,0,0,1.034804961,0,TOX21_RT_HEK293_GLO_32hr_viability
+Di-n-octyl phthalate,117-84-0,0.233425055,1.293050493,1.805227685,0.947083369,BSK_SAg_PBMCCytotoxicity_up
+Carmofur,61422-45-5,1.44E-08,5.94E-08,2.426424499,5.85E-08,TOX21_ERb_BLA_Agonist_viability
+N-Butylbenzenesulfonamide,3622-84-2,0.000957922,0.009680126,0.989576227,0.00388661,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+2-Butoxyethanol,111-76-2,0.000145188,0.016864867,0.086088902,0.000589075,SH-S5Y5 neurite outgrowth
+"3,6,9,12-Tetraoxahexadecan-1-ol",1559-34-8,1.44E-07,2.95E-07,4.894391329,5.85E-07,TOX21_PR_BLA_Antagonist_viability
+Dibutyl butylphosphonate,78-46-6,6.65E-05,4.71E-05,14.12581818,0.000269968,TOX21_RT_HEPG2_GLO_00hr_ctrl_viability
+Tributyl phosphate,126-73-8,0.000812302,0.003894099,2.085981529,0.00329578,NCCT_MITO_basal_resp_rate_OCR_dn|NCCT_MITO_max_resp_rate_OCR_dn|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|INTER_BURST_INTERVAL_AVG_(SEC)|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION
+Propylparaben,94-13-3,0,0,0.713099043,0,NVS_GPCR_hAdoRA1|NVS_TR_hDAT
+Oxibendazole,20559-55-1,0,0,0.087831341,0,TOX21_PGC_ERR_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Albendazole oxide,54029-12-8,1.44E-08,6.36E-08,2.266039514,5.85E-08,TOX21_RT_HEK293_GLO_40hr_viability
+4-(Diethylamino)salicylaldehyde,17754-90-4,0,0,5.332508599,0,TOX21_RXR_BLA_Agonist_viability
+4-(Diethylamino)benzaldehyde,120-21-8,0,0,1.883556624,0,NVS_TR_rSERT
+"N,N-Diethyl-p-phenylenediamine",93-05-0,1.44E-08,3.94E-08,3.655677995,5.85E-08,TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CAR_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_H2AX_HTRF_CHO_viability|TOX21_MMP_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RXR_BLA_Agonist_viability|TOX21_SBE_BLA_Antagonist_viability|TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_VDR_BLA_Agonist_viability
+"N-Ethyl-N-(3-methylphenyl)ethane-1,2-diamine",19248-13-6,4.47E-07,2.04E-07,21.94058905,1.81E-06,TOX21_RT_HEPG2_FLO_24hr_viability
+Atrazine,1912-24-9,1.31E-06,7.05E-06,1.860940538,5.32E-06,NVS_GPCR_bAdoR_NonSelective|NUMBER_OF_BURSTS|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX|SH-S5Y5 neurite outgrowth
+N-Ethylperfluorooctanesulfonamide,4151-50-2,1.90E-06,1.52E-06,12.48951309,7.72E-06,APR_HepG2_CellLoss_24h_dn|APR_HepG2_CellLoss_72h_dn|APR_HepG2_MicrotubuleCSK_24h_up|APR_HepG2_MicrotubuleCSK_72h_up|TOX21_ARE_BLA_agonist_viability
+Ethyl 4-oxo-1-piperidinecarboxylate,29976-53-2,1.03E-05,0.000527824,0.195033774,4.18E-05,TOX21_RT_HEPG2_FLO_40hr_ctrl_viability
+"Ethyl 4-(5-chloro-2,3-dihydro-2-oxo-1h-benzimidazol-2-yl)piperidine-1-carboxylate",53786-46-2,0,0,0.502248261,0,TOX21_CAR_Antagonist_viability|TOX21_RT_HEK293_GLO_08hr_viability
+Thiophanate,23564-06-9,0,0,21.5860581,0,TOX21_RT_HEK293_GLO_16hr_viability
+2-Ethoxyaniline,94-70-2,1.44E-08,1.35E-07,1.067746615,5.85E-08,TOX21_RT_HEK293_GLO_40hr_viability
+2-Ethoxy-5-(1-propenyl)phenol,94-86-0,0,0,0.728521912,0,NVS_TR_hNET
+Oxyfluorfen,42874-03-3,1.40E-06,6.84E-06,2.045989528,5.67E-06,TOX21_MMP_rhodamine
+4-Ethoxyphenol,622-62-8,0,0,8.589724428,0,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_24hr_viability
+Tralkoxydim,87820-88-0,2.74E-07,6.29E-06,0.435844196,1.11E-06,NVS_GPCR_hAdra2A|NVS_GPCR_rmAdra2B
+Ethyl 4-nitrophenyl ethylphosphonate,546-71-4,0,0,6.619520138,0,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability
+Paraoxon,311-45-5,2.05E-06,0.011143397,0.001837263,8.31E-06,SH-S5Y5 neurite outgrowth
+Diazoxon,962-58-3,0,0,0.004671898,0,SH-S5Y5 neurite outgrowth
+Ethyl dichlorophosphate,1498-51-7,4.02E-06,7.39E-05,0.543968776,1.63E-05,TOX21_RT_HEK293_GLO_32hr_viability
+Molinate,2212-67-1,1.38E-06,2.29E-05,0.603234692,5.62E-06,NVS_GPCR_hM2
+Mabuterol hydrochloride,54240-36-7,2.88E-08,1.27E-07,2.27241791,1.17E-07,TOX21_AhR_LUC_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Proguanil hydrochloride,637-32-1,1.44E-08,1.07E-07,1.34752925,5.85E-08,TOX21_CASP3_CHO_viability|TOX21_PPARd_BLA_antagonist_viability|TOX21_RT_HEPG2_FLO_16hr_ctrl_viability
+Isoproterenol hydrochloride,51-30-9,4.24E-06,3.00E-05,1.412636536,1.72E-05,NVS_GPCR_rAdrb_NonSelective|NVS_TR_hDAT|BURST_DURATION_AVG_ (SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NETWORK_BURST_PERCENTAGE
+2-Chloropropyldimethylamine hydrochloride,4584-49-0,1.27E-06,7.98E-07,15.90778721,5.15E-06,BSK_SAg_PBMCCytotoxicity_down|BSK_SAg_Proliferation_down
+Cycloguanil hydrochloride,152-53-4,4.28E-06,2.59E-05,1.654171812,1.74E-05,TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p4_viability
+"(-)-2,5-Dimethoxy-4-ethylamphetamine hydrochloride",42011-76-7,2.88E-08,3.32E-08,8.674465516,1.17E-07,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability
+"(+)-2,5-Dimethoxy-4-ethylamphetamine hydrochloride",50505-91-4,1.44E-08,2.84E-08,5.069391509,5.85E-08,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+Irinotecan hydrochloride,100286-90-6,0,0,1.403237547,0,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Benzidine dihydrochloride,531-85-1,0,0,4.137756951,0,TOX21_ERb_BLA_Agonist_viability
+N-(1-Naphthyl)ethylenediamine dihydrochloride,1465-25-4,4.33E-08,5.36E-08,8.070027019,1.75E-07,TOX21_ERb_BLA_Antagonist_viability|TOX21_RT_HEK293_GLO_00hr_viability
+Clonidine hydrochloride,4205-91-8,1.44E-08,5.92E-09,24.36514448,5.85E-08,TOX21_PR_BLA_Antagonist_viability
+"1,3-Dichloro-6,7,8,9,10,12-hexahydroazepino[2,1-b]quinazoline hydrochloride (1:1)",149062-75-9,1.44E-08,6.01E-07,0.240015417,5.85E-08,NVS_ENZ_hAChE|NVS_ENZ_rAChE|NVS_ENZ_rMAOAC|NVS_ENZ_rMAOAP|NVS_GPCR_gMPeripheral_NonSelective|NVS_GPCR_hAdra2A|NVS_GPCR_hM1|NVS_GPCR_hM2|NVS_GPCR_hM3|NVS_GPCR_hM4|NVS_GPCR_hM5|NVS_GPCR_rAdra1A|NVS_GPCR_rAdra1_NonSelective|NVS_GPCR_rAdra2_NonSelective|NVS_GPCR_rOpiate_NonSelective|NVS_GPCR_rmAdra2B|NVS_LGIC_hNNR_NBungSens|NVS_LGIC_rNNR_BungSens|NVS_TR_hNET
+Dexchlorpheniramine hydrochloride,5502-69-2,3.60E-07,7.28E-07,4.949850472,1.46E-06,TOX21_PXR_viability
+Clomipramine hydrochloride,17321-77-6,8.36E-06,1.08E-05,7.71164725,3.39E-05,ATG_XTT_Cytotoxicity_up|TOX21_ERb_BLA_Agonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PPARd_BLA_antagonist_viability|TOX21_TR_LUC_GH3_Antagonist_viability|TOX21_VDR_BLA_antagonist_viability
+Diphenhydramine hydrochloride,147-24-0,4.92E-05,0.00081292,0.605503384,0.000199712,NVS_ENZ_hES|NVS_GPCR_gMPeripheral_NonSelective|NVS_GPCR_gOpiateK|NVS_GPCR_hAdra2A|NVS_GPCR_hAdra2C|NVS_GPCR_hDRD1|NVS_GPCR_hM1|NVS_GPCR_hM2|NVS_GPCR_hM3|NVS_GPCR_hM4|NVS_GPCR_hM5|NVS_GPCR_rAdra1A|NVS_GPCR_rAdra1B|NVS_GPCR_rAdra1_NonSelective|NVS_GPCR_rAdra2_NonSelective|NVS_GPCR_rOpiate_NonSelective|NVS_GPCR_rmAdra2B|NVS_IC_rCaBTZCHL|NVS_IC_rNaCh_site2|NVS_TR_gDAT|NVS_TR_hDAT|NVS_TR_hNET|NVS_TR_rNET|NVS_GPCR_h5HT2A|NVS_GPCR_h5HT7|NVS_GPCR_p5HT2C|NVS_GPCR_r5HT_NonSelective|NVS_TR_rSERT|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Naftifine hydrochloride,65473-14-5,2.70E-06,1.57E-05,1.713935663,1.09E-05,TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RXR_BLA_Agonist_viability
+"L-3,4-Dihydroxyphenylalanine methyl ester hydrochloride",1421-65-4,1.01E-07,2.06E-07,4.894372072,4.09E-07,TOX21_Aromatase_Inhibition_viability
+"R-(-)-2,5-Dimethoxy-4-bromoamphetamine hydrochloride",50505-92-5,1.44E-08,3.08E-08,4.679882271,5.85E-08,TOX21_ERb_BLA_Agonist_viability|TOX21_PR_BLA_Agonist_viability|TOX21_PXR_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+"S-(+)-2,5-Dimethoxy-4-bromoamphetamine hydrochloride",50505-93-6,1.44E-08,4.31E-08,3.348977947,5.85E-08,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability
+"4-Bromo-2,5-dimethoxyamphetamine hydrochloride",29705-96-2,1.44E-08,2.70E-08,5.334027081,5.85E-08,TOX21_PXR_viability|TOX21_RT_HEK293_GLO_40hr_viability
+p-Anisidinium chloride,20265-97-8,2.88E-08,4.15E-07,0.695527866,1.17E-07,ACEA_ER_AUC_viability|NCCT_HEK293T_CellTiterGLO
+1-Phenylcyclohexylamine hydrochloride,1934-71-0,0,0,8.019889355,0,TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+C.I. Basic Red 9 monohydrochloride,569-61-9,0,0,1.802004402,0,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_AR_LUC_MDAKB2_Antagonist_0.5nM_R1881_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_ELG1_LUC_Agonist_viability|TOX21_ERR_viability|TOX21_ERa_BLA_Antagonist_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_H2AX_HTRF_CHO_viability|TOX21_MMP_viability|TOX21_PGC_ERR_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_PXR_viability|TOX21_RAR_LUC_Agonist_viability|TOX21_RAR_LUC_Antagonist_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_TR_LUC_GH3_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability
+4-Chloroaniline hydrochloride,20265-96-7,3.26E-06,2.59E-05,1.258352712,1.32E-05,ACEA_ER_AUC_viability
+C.I. Basic Orange 2,532-82-1,0,0,0.864668742,0,TOX21_MMP_ratio_down
+"2'-Deoxy-2',2'-difluorocytidine monohydrochloride",122111-03-9,7.21E-08,1.66E-06,0.433150594,2.92E-07,TOX21_RT_HEK293_GLO_40hr_viability
+Lindane,58-89-9,1.99E-05,0.00011733,1.693333333,8.06E-05,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|BURST_DURATION_AVG_ (SEC)|NUMBER_OF_SPIKES_PER_BURST_AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|AREA_UNDER_CROSS_CORRELATION|MFR|BR|BD|IBI|#NS|NSDsd|#SiNS|LD movement pattern (pearson) 5dpf|b D1 distmoved 5dpf|percent scrunching Tail 12d|mean firing rate|number network spikes|percent affected 4dpf|a L1 distmoved 5dpf|LD movement pattern (spearman) 1dpf|LD movement pattern (spearman) 5dpf|e L3 distmoved 5dpf
+Captan,133-06-2,1.38E-06,4.36E-06,3.177709884,5.62E-06,TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CAR_Agonist_viabillity|TOX21_CASP3_CHO_viability|TOX21_FXR_BLA_agonist_viability|TOX21_HRE_BLA_Agonist_viability|TOX21_PGC_ERR_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_RAR_LUC_Agonist_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_00hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_RT_HEPG2_GLO_40hr_viability|TOX21_SBE_BLA_Antagonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+"o,p'-DDE",3424-82-6,1.76E-06,2.49E-06,7.055562677,7.14E-06,BSK_3C_Proliferation_down|BSK_3C_Vis_down|BSK_LPS_SRB_down|BSK_SAg_Proliferation_down|TOX21_RT_HEPG2_FLO_40hr_ctrl_viability
+MON-4660,71526-07-3,0,0,1.893604265,0,ACEA_ER_AUC_viability
+"1-(2-Chlorophenyl)-1-(4-chlorophenyl)-2,2-dichloroethane",53-19-0,1.49E-06,0.003497656,0.004245812,6.03E-06,TOX21_RT_HEK293_FLO_24hr_viability
+"p,p'-DDD",72-54-8,1.67E-06,1.54E-05,1.086931649,6.79E-06,APR_HepG2_MitoMembPot_24h_dn|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|BURST_DURATION_AVG_ (SEC)|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+"2,2'-Dichlorobiphenyl",13029-08-8,3.11E-06,7.05E-06,4.420072006,1.26E-05,TOX21_RT_HEK293_FLO_16hr_viability|TOX21_RT_HEK293_FLO_24hr_viability|TOX21_RT_HEK293_FLO_40hr_viability|TOX21_RT_HEPG2_FLO_32hr_ctrl_viability
+Dieldrin,60-57-1,1.50E-06,0.020749223,0.000722657,6.08E-06,SH-S5Y5 viability
+Aldrin,309-00-2,1.43E-06,1.75E-06,8.170142488,5.79E-06,APR_HepG2_CellLoss_24h_dn|APR_HepG2_CellLoss_72h_dn|BSK_3C_Proliferation_down|BSK_hDFCGF_Proliferation_down|BSK_hDFCGF_SRB_down|TOX21_PPARd_BLA_Agonist_viability
+Isodrin,465-73-6,1.70E-06,3.88E-06,4.380451802,6.90E-06,BSK_3C_SRB_down|BSK_3C_Vis_down|BSK_CASM3C_Proliferation_down|BSK_LPS_SRB_down|BSK_SAg_PBMCCytotoxicity_down|BSK_SAg_Proliferation_down|BSK_SAg_SRB_down|BSK_hDFCGF_Proliferation_down
+Endrin,72-20-8,1.37E-06,4.15E-05,0.330373876,5.56E-06,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|BURST_DURATION_AVG_ (SEC)|NUMBER_OF_SPIKES_PER_BURST_AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|AREA_UNDER_CROSS_CORRELATION
+Imazalil,35554-44-0,2.74E-07,3.18E-06,0.862786119,1.11E-06,NCCT_MITO_basal_resp_rate_OCR_dn|NVS_GPCR_gOpiateK|NVS_GPCR_hM1|NVS_GPCR_hM2|NVS_GPCR_hM3|NVS_GPCR_hM4|NVS_GPCR_hOpiate_mu|NVS_GPCR_rOpiate_NonSelective|NVS_IC_rNaCh_site2|NVS_TR_gDAT|NVS_TR_hDAT|NVS_TR_hNET|NVS_TR_rVMAT2|NVS_TR_hSERT|NVS_TR_rSERT|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NETWORK_BURST_PERCENTAGE|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Thiacloprid,111988-49-9,0,0,0.574328864,0,NVS_LGIC_hNNR_NBungSens|NVS_LGIC_rNNR_BungSens|SH-S5Y5 neurite outgrowth
+Amoxapine,14028-44-5,0,0,1.341904787,0,TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+Ticlatone,70-10-0,1.44E-08,4.51E-08,3.19603357,5.85E-08,TOX21_CASP3_CHO_viability
+2-Chloro-N-phenylacetamide,587-65-5,4.33E-08,4.67E-08,9.25444268,1.75E-07,ACEA_ER_AUC_viability|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_HSE_BLA_agonist_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_TR_LUC_GH3_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability
+"1,2-Bis(chloromethyl)benzene",612-12-4,0,0,19.86528687,0,TOX21_RORg_LUC_CHO_Antagonist_viability
+"2-Chloro-N,N-bis(2-chloroethyl)ethanamine",555-77-1,1.44E-08,1.76E-07,0.818011109,5.85E-08,TOX21_HRE_BLA_Agonist_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Tris(2-chloroethyl) phosphate,115-96-8,0.000117679,0.000782489,1.503899459,0.000477461,IBI|NSDsd
+Tetramethylthiuram monosulfide,97-74-5,4.61E-07,7.15E-06,0.645561909,1.87E-06,BSK_3C_Proliferation_down|BSK_3C_SRB_down|BSK_CASM3C_Proliferation_down|BSK_hDFCGF_Proliferation_down|BSK_hDFCGF_SRB_down|TOX21_ARE_BLA_agonist_viability|TOX21_AR_BLA_Antagonist_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Antagonist_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_FXR_BLA_agonist_viability|TOX21_FXR_BLA_antagonist_viability|TOX21_H2AX_HTRF_CHO_viability|TOX21_PGC_ERR_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PR_BLA_Agonist_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_RT_HEK293_FLO_24hr_viability|TOX21_RT_HEK293_FLO_32hr_viability|TOX21_RT_HEK293_FLO_40hr_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_FLO_24hr_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_RT_HEPG2_GLO_40hr_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+"N,N-Dimethyl-4-nitrosoaniline",138-89-6,1.44E-08,1.21E-08,11.9115973,5.85E-08,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_GR_BLA_Antagonist_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PPARg_BLA_antagonist_viability|TOX21_RAR_LUC_Agonist_viability|TOX21_RT_HEPG2_GLO_00hr_ctrl_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_40hr_viability
+"N,N-Dimethyl-p-phenylenediamine",99-98-9,0,0,14.10210113,0,TOX21_AR_BLA_Antagonist_viability|TOX21_HDAC_Inhibition_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RXR_BLA_Agonist_viability
+3-Dimethylaminophenol,99-07-0,2.94E-05,0.016383878,0.017925651,0.000119161,TOX21_RT_HEPG2_FLO_24hr_viability
+Acetamiprid,135410-20-7,2.25E-06,9.89E-05,0.22740548,9.13E-06,NVS_LGIC_hNNR_NBungSens|NVS_LGIC_rNNR_BungSens|SH-S5Y5 neurite outgrowth
+Clothianidin,210880-92-5,2.88E-08,3.75E-07,0.769953256,1.17E-07,NVS_GPCR_rmAdra2B|NVS_LGIC_hNNR_NBungSens|SH-S5Y5 neurite outgrowth
+Theophylline,58-55-9,1.87E-07,2.25E-06,0.831408553,7.60E-07,NVS_GPCR_bAdoR_NonSelective|NVS_GPCR_hAdoRA1|NVS_GPCR_hAdoRA2a
+N-Methyl-2-pyrrolidone,872-50-4,0.001580197,0.273662423,0.057742556,0.006411386,SH-S5Y5 neurite outgrowth
+Olanzapine,132539-06-1,0,0,1.964482766,0,TOX21_AhR_LUC_Agonist_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_PXR_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+Thiamethoxam,153719-23-4,3.60E-07,0.000521509,0.006911609,1.46E-06,SH-S5Y5 neurite outgrowth
+5-Chloro-2-methyl-3(2H)-isothiazolone,26172-55-4,2.16E-05,0.000413093,0.523881525,8.78E-05,MFR|BR|ISI|%SiB|BD|IBI|#AE|#ABE|#NS|NSD|%SiNS|NS-ISI|NSDsd|#SiNS|r|MI
+Aldoxycarb,1646-88-4,3.60E-07,1.84E-06,1.96155317,1.46E-06,ACEA_AR_antagonist_AUC_viability
+Propoxur,114-26-1,0,0,1.584383487,0,NVS_ENZ_hAChE|NVS_ENZ_rAChE
+Carbofuran,1563-66-2,6.18E-05,0.007245609,0.085286028,0.000250723,NVS_ENZ_hAChE|NVS_ENZ_rAChE
+3-Hydroxycarbofuran,16655-82-6,1.44E-08,0.001377899,0.000104637,5.85E-08,SH-S5Y5 neurite outgrowth
+Oxamyl,23135-22-0,3.60E-07,1.33E-06,2.704492303,1.46E-06,APR_HepG2_MitoMass_72h_up|NVS_ENZ_hAChE|NVS_ENZ_rAChE
+Aldicarb,116-06-3,3.75E-07,2.71E-06,1.381011469,1.52E-06,APR_HepG2_MitoMembPot_72h_dn|NVS_ENZ_rAChE|#SiNS|r|percent affected 4dpf|LD movement pattern (pearson) 5dpf|LD movement pattern (spearman) 4dpf|mean correlation|a L1 distmoved 4dpf|b D1 distmoved 4dpf|number network spikes|b D1 distmoved 5dpf|percent affected 4dpf|LD movement pattern (spearman) 5dpf
+"1,1,3-Trimethyl-2-thiourea",2489-77-2,7.21E-08,1.85E-07,3.893326281,2.92E-07,TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+N-Methyl-4-nitroaniline,100-15-2,0,0,13.1974008,0,TOX21_CAR_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_CASP3_HEPG2_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PGC_ERR_viability|TOX21_SSH_3T3_GLI3_Agonist_viability
+(N-6)-Methyladenine,443-72-1,4.34E-06,0.00010346,0.419465648,1.76E-05,TOX21_MMP_ratio_down
+Rifabutin,72559-06-9,4.46E-06,1.16E-05,3.835371784,1.81E-05,TOX21_MMP_ratio_up
+Dimethyl isophthalate,1459-93-4,0,0,2.874491399,0,TOX21_RT_HEK293_FLO_24hr_viability|TOX21_RT_HEPG2_FLO_00hr_ctrl_viability
+Methylparaben,99-76-3,0,0,2.241652934,0,ACEA_AR_antagonist_AUC_viability
+"Methyl 3-amino-5,6-dichloropyrazine-2-carboxylate",1458-18-0,2.09E-05,0.000451142,0.463718887,8.49E-05,TOX21_CASP3_CHO_viability|TOX21_PPARd_BLA_antagonist_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability
+Thiophanate-methyl,23564-05-8,1.44E-08,3.11E-08,4.639236202,5.85E-08,ACEA_AR_agonist_AUC_viability|ACEA_AR_antagonist_AUC_viability|APR_HepG2_CellLoss_24h_dn|APR_HepG2_CellLoss_72h_dn|APR_HepG2_MicrotubuleCSK_24h_up|BSK_SAg_PBMCCytotoxicity_up
+Cyclobendazole,31431-43-3,2.88E-08,1.35E-06,0.213656505,1.17E-07,TOX21_CASP3_CHO_viability|TOX21_PGC_ERR_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+2-Methoxy-4-vinylphenol,7786-61-0,2.88E-08,7.98E-08,3.612895494,1.17E-07,NVS_TR_hNET
+Eugenol,97-53-0,4.33E-08,1.50E-05,0.028931345,1.75E-07,BURST_PERCENTAGE_AVG_(SEC)|NETWORK_BURST_PERCENTAGE|SYNCHRONY_INDEX
+2-Methoxy-4-nitroaniline,97-52-9,0,0,1.135815767,0,ACEA_AR_agonist_AUC_viability|ACEA_AR_antagonist_AUC_viability|NCCT_HEK293T_CellTiterGLO|TOX21_CAR_Agonist_viabillity
+"3,3'-Dimethoxybenzidine",119-90-4,5.18E-05,8.45E-05,6.133660563,0.000210359,NVS_GPCR_r5HT1_NonSelective
+Epirizole,18694-40-1,1.44E-08,2.16E-08,6.675590265,5.85E-08,TOX21_PR_BLA_Agonist_viability
+"4'-Chloro-2',5'-dimethoxyacetoacetanilide",4433-79-8,1.44E-08,8.99E-08,1.604200854,5.85E-08,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_p53_BLA_p4_viability
+(E)-Anethole,4180-23-8,0,0,0.275208464,0,NUMBER_OF_SPIKES|NUMBER_OF_SPIKES_PER_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION
+Chlorotrianisene,569-57-3,6.26E-06,9.77E-06,6.405524105,2.54E-05,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability
+4-Methoxyaniline,104-94-9,2.88E-08,3.80E-08,7.579181195,1.17E-07,TOX21_ERR_viability
+6-Methoxy-2-benzothiazolamine,1747-60-0,4.33E-08,1.22E-06,0.353629681,1.75E-07,TOX21_RT_HEK293_GLO_32hr_viability
+Brucine,357-57-3,5.77E-07,6.79E-07,8.489505243,2.34E-06,TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Prazosin,19216-56-9,0,0,5.835662507,0,TOX21_TR_LUC_GH3_Antagonist_viability
+UK-333747,197077-55-7,0,0,2.09104935,0,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Fluvoxamine,54739-18-3,0,0,2.507305743,0,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability
+Ethylene glycol dimethyl ether,110-71-4,4.04E-07,1.08E-05,0.375430056,1.64E-06,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Dicrotophos,141-66-2,2.59E-05,8.67E-05,2.984276523,0.000105004,NVS_ENZ_hES
+Difenzoquat metilsulfate,43222-48-6,2.19E-06,1.95E-05,1.124889405,8.89E-06,NCCT_MITO_max_resp_rate_OCR_dn|NVS_ENZ_hES|NVS_GPCR_gOpiateK|NVS_GPCR_hAdra2A|NVS_GPCR_hAdra2C|NVS_GPCR_hM1|NVS_GPCR_hM2|NVS_GPCR_hM3|NVS_GPCR_hM4|NVS_GPCR_rAdra1A|NVS_GPCR_rAdra1B|NVS_GPCR_rAdra1_NonSelective|NVS_GPCR_rAdra2_NonSelective|NVS_GPCR_rmAdra2B|NVS_IC_rNaCh_site2|NVS_TR_hNET|NVS_GPCR_g5HT4|NVS_GPCR_h5HT7|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|BURST_DURATION_AVG_ (SEC)|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Dimethyl sulfate,77-78-1,2.88E-06,4.31E-05,0.669308753,1.17E-05,NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NETWORK_BURST_PERCENTAGE
+Piragliatin,625114-41-2,4.33E-08,9.96E-08,4.342231722,1.75E-07,APR_HepG2_MitoMass_72h_up
+4-Chlorophenyl methyl sulfone,98-57-7,3.27E-06,0.058613762,0.000558376,1.33E-05,TOX21_RT_HEPG2_FLO_16hr_ctrl_viability
+Saquinavir mesylate,149845-06-7,3.11E-06,4.02E-06,7.74339132,1.26E-05,TOX21_AhR_LUC_Agonist_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_CASP3_HEPG2_viability|TOX21_ERR_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_PGC_ERR_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+3-Methyl-4-(methylthio)phenol,3120-74-9,1.73E-07,3.86E-07,4.478637977,7.02E-07,NVS_ENZ_rMAOAC|NVS_TR_gDAT
+Aziprotryne,4658-28-0,1.44E-08,1.16E-09,124.4293008,5.85E-08,TOX21_RT_HEK293_GLO_24hr_viability
+Metribuzin,21087-64-9,2.88E-08,1.27E-07,2.274309757,1.17E-07,ACEA_AR_agonist_AUC_viability
+1-Hexyl-3-methylimidazolium tetrafluoroborate,244193-50-8,1.01E-05,1.85E-05,5.474511189,4.11E-05,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_CAR_Antagonist_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability
+1-Hexyl-3-methylimidazolium hexafluorophosphate,304680-35-1,0,0,1.228309783,0,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_CAR_Agonist_viabillity|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+1-Ethyl-3-methylimidazolium hexafluorophosphate,155371-19-0,8.65E-08,1.65E-05,0.052373449,3.51E-07,TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability
+Tralopyril,122454-29-9,2.06E-06,7.41E-05,0.278271329,8.37E-06,ACEA_ER_AUC_viability|BSK_3C_Vis_down|BSK_CASM3C_Proliferation_down|BSK_SAg_Proliferation_down|TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_CAR_Agonist_viabillity|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_SBE_BLA_Agonist_viability|TOX21_SBE_BLA_Antagonist_viability
+Tetraconazole,112281-77-3,1.46E-06,8.11E-06,1.794879691,5.91E-06,NCCT_MITO_basal_resp_rate_OCR_dn|NCCT_MITO_max_resp_rate_OCR_dn|NVS_IC_rCaBTZCHL|NVS_IC_rCaDHPRCh_L|NVS_TR_hDAT
+Diflubenzuron,35367-38-5,2.74E-07,1.36E-06,2.014236997,1.11E-06,TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+5-Fluorouracil,51-21-8,3.94E-06,0.000136078,0.289251908,1.60E-05,MFR|BR|ISI|%SiB|BD|IBI|#AE|#ABE|#NS|NSP|NSD|%SiNS|NS-ISI|NSDsd|#SiNS|r|MI|percent spikes in network spike|mean correlation|mutual information|number network spikes|number actively bursting electrodes|number active electrodes|mean firing rate
+2-(Thiocyanomethylthio)benzothiazole,21564-17-0,4.30E-06,1.84E-05,2.339046788,1.74E-05,APR_HepG2_MitoMass_1h_dn|NCCT_MITO_basal_resp_rate_OCR_dn|NCCT_MITO_max_resp_rate_OCR_dn|NVS_GPCR_hAdra2A|NVS_GPCR_hDRD1|NVS_TR_hNET|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+"1,3-Diphenylguanidine",102-06-7,1.89E-06,3.75E-05,0.503932586,7.66E-06,NVS_GPCR_hM4|NVS_GPCR_rAdra1A|NVS_GPCR_rmAdra2B|NVS_GPCR_h5HT7|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|AREA_UNDER_CROSS_CORRELATION|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION
+"1,3-Diiminobenz(f)isoindoline",65558-69-2,5.77E-08,4.78E-07,1.207719087,2.34E-07,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+Indole,120-72-9,2.45E-07,2.20E-06,1.113993985,9.94E-07,TOX21_RT_HEPG2_FLO_32hr_ctrl_viability
+Phenothiazine,92-84-2,9.37E-07,4.67E-06,2.008601723,3.80E-06,NVS_ENZ_rMAOAC|TOX21_MMP_rhodamine|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|NETWORK_BURST_PERCENTAGE|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+Guanabenz,5051-62-7,1.59E-07,1.34E-06,1.180448485,6.43E-07,TOX21_ERa_LUC_VM7_Antagonist_0.5nM_E2_viability|TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Phthalamide,88-96-0,4.24E-06,2.53E-06,16.77022436,1.72E-05,TOX21_RT_HEK293_GLO_32hr_viability
+6-Aminonicotinamide,329-89-5,6.72E-06,9.64E-05,0.697179502,2.73E-05,CCTE_Mundy_HCI_Cortical_NOG_NeuriteCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_BPCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteLength_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteSpotCountPerNeuron_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuronCount_loss|CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_SynapseCount_loss|MFR|BR|ISI|%SiB|BD|IBI|#AE|#ABE|#NS|NSP|NSD|%SiNS|NS-ISI|NSDsd|#SiNS|r|MI
+2-Benzimidazolylurea,24370-25-0,4.28E-06,5.26E-12,8142077.251,1.74E-05,TOX21_RT_HEK293_FLO_08hr_viability|TOX21_RT_HEK293_FLO_16hr_viability
+"2-Bromo-4,6-dinitroaniline",1817-73-8,3.13E-06,4.23E-06,7.388125608,1.27E-05,TOX21_SSH_3T3_GLI3_Antagonist_viability
+"4-Nitro-1,2-phenylenediamine",99-56-9,1.44E-08,1.94E-08,7.449603661,5.85E-08,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CASP3_CHO_viability|TOX21_PXR_viability|TOX21_SSH_3T3_GLI3_Agonist_viability
+"4-Chloro-1,2-diaminobenzene",95-83-0,0,0,3.881279347,0,TOX21_RT_HEPG2_FLO_40hr_ctrl_viability
+2-Amino-5-nitrophenol,121-88-0,0,0,2.020884065,0,BSK_hDFCGF_Proliferation_down
+2-Amino-4-nitrophenol,99-57-0,0,0,11.08188207,0,TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide_viability|TOX21_CAR_Antagonist_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_08hr_viability
+4-Amino-2-nitrophenol,119-34-6,0,0,2.043358882,0,TOX21_MMP_ratio_down
+3-(Trifluoromethyl)aniline,98-16-8,5.26E-06,6.33E-06,8.310241868,2.14E-05,TOX21_RT_HEK293_FLO_24hr_viability
+"3,4-Dichloroaniline",95-76-1,0,0,1.195086944,0,ACEA_AR_agonist_AUC_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+2-Amino-4-chlorophenol,95-85-2,0,0,1.767044562,0,TOX21_MMP_ratio_down
+"4-Chloro-1,3-diaminobenzene",5131-60-2,1.44E-08,8.01E-08,1.799971931,5.85E-08,TOX21_VDR_BLA_Agonist_viability
+"1,3-Benzenediamine",108-45-2,2.38E-06,1.44E-05,1.654622266,9.65E-06,NCCT_MITO_inhib_resp_rate_OCR_up|NVS_ENZ_rMAOAC
+"4-Nitro-1,3-benzenediamine",5131-58-8,0,0,7.355652811,0,TOX21_Aromatase_Inhibition_viability|TOX21_PXR_viability
+4-Nitroaniline,100-01-6,1.44E-08,3.91E-08,3.685848185,5.85E-08,ACEA_AR_antagonist_AUC_viability|TOX21_ERR_viability
+C.I. Azoic Diazo Component 112,92-87-5,1.01E-07,3.36E-07,3.003739934,4.09E-07,NVS_TR_gDAT|NVS_TR_hNET|NVS_TR_rNET
+4-Biphenylamine,92-67-1,0,0,1.36230143,0,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Dapsone,80-08-0,1.63E-06,4.55E-05,0.358463624,6.61E-06,NVS_TR_gDAT|NVS_TR_hDAT|NVS_GPCR_h5HT6
+"4,4'-Diaminobiphenyl methane",101-77-9,1.28E-06,1.26E-05,1.014858052,5.21E-06,NVS_TR_hDAT
+4-Chloroaniline,106-47-8,4.79E-05,0.00051967,0.921940909,0.000194389,ACEA_AR_agonist_AUC_viability|ACEA_AR_antagonist_AUC_viability|ACEA_ER_AUC_viability|BSK_hDFCGF_Proliferation_down
+"1,4-Diaminoanthraquinone",128-95-0,2.64E-05,0.071577923,0.003688161,0.00010711,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+"N-Phenyl-1,4-benzenediamine",101-54-2,0,0,3.989564811,0,TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_PGC_ERR_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+4-Aminophenol,123-30-8,1.44E-08,1.10E-08,13.1569178,5.85E-08,TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PGC_ERR_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_p53_BLA_p5_viability
+"4,4'-Oxydianiline",101-80-4,0.000124167,0.009489713,0.130843329,0.000503785,NVS_TR_gDAT|NVS_TR_hDAT
+2-Aminodiphenylamine,534-85-0,0,0,3.322363509,0,TOX21_CASP3_HEPG2_viability|TOX21_ERR_viability|TOX21_PGC_ERR_viability|TOX21_RT_HEK293_GLO_08hr_viability|TOX21_TR_LUC_GH3_Antagonist_viability
+1-Naphthylamine,134-32-7,1.44E-08,7.72E-08,1.86757466,5.85E-08,BSK_3C_Proliferation_down
+2-Naphthylamine,91-59-8,1.44E-08,3.34E-07,0.431950301,5.85E-08,APR_HepG2_MitoMass_72h_up|APR_HepG2_MitoMembPot_24h_dn|NVS_TR_hNET|NUMBER_OF_SPIKES_PER_BURST_AVG|INTER_BURST_INTERVAL_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG
+"6-Phenyl-1,3,5-triazine-2,4-diamine",91-76-9,2.88E-07,1.29E-05,0.222772934,1.17E-06,NVS_GPCR_hAdoRA1|NVS_GPCR_hAdoRA2a
+2-Amino-5-nitrothiazole,121-66-4,7.21E-08,7.34E-08,9.825872729,2.92E-07,TOX21_AhR_LUC_Agonist_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity
+"4,4'-Diaminodicyclohexylmethane",1761-71-3,1.30E-07,2.53E-07,5.129541007,5.26E-07,TOX21_PR_BLA_Agonist_viability
+Thiocarbazide,2231-57-4,1.35E-05,8.67E-06,15.62178396,5.49E-05,TOX21_PPARd_BLA_Agonist_viability
+Thiosemicarbazide,79-19-6,4.14E-06,5.93E-06,6.97691834,1.68E-05,TOX21_CAR_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_FXR_BLA_antagonist_viability|TOX21_PPARd_BLA_antagonist_viability|TOX21_PR_BLA_Agonist_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability
+6-Mercaptopurine monohydrate,6112-76-1,7.50E-07,1.05E-05,0.712555026,3.04E-06,TOX21_CAR_Antagonist_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_PXR_viability|TOX21_RXR_BLA_Agonist_viability|TOX21_VDR_BLA_Agonist_viability|TOX21_VDR_BLA_antagonist_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p3_viability|TOX21_p53_BLA_p4_viability
+Praziquantel,55268-74-1,0,0,15.16963902,0,TOX21_SSH_3T3_GLI3_Antagonist_viability
+Thidiazuron,51707-55-2,1.54E-06,2.02E-05,0.765203287,6.26E-06,APR_HepG2_MitoMembPot_1h_dn|NVS_LGIC_bGABARa5|NVS_LGIC_rGABARa6|TOX21_MMP_ratio_down|NVS_GPCR_h5HT5A
+"Bis(2,3-epoxypropyl) cyclohexane-1,2-dicarboxylate",5493-45-8,0,0,5.198402237,0,TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Caprolactam,105-60-2,0.00055898,0.001260368,4.435056303,0.002267969,TOX21_CAR_Antagonist_viability|TOX21_PR_BLA_Antagonist_viability
+"1,1'-Disulfanediyldiazepan-2-one",23847-08-7,5.77E-08,3.55E-08,16.24311363,2.34E-07,TOX21_CASP3_CHO_viability|TOX21_RT_HEK293_FLO_32hr_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+1-Phenyl-3-pyrazolidinone,92-43-3,1.44E-08,2.49E-08,5.789446571,5.85E-08,TOX21_ERb_BLA_Antagonist_viability
+"Tris(2,3-epoxypropyl)isocyanurate",2451-62-9,8.65E-08,1.07E-06,0.810896514,3.51E-07,ACEA_AR_agonist_AUC_viability|ACEA_AR_antagonist_AUC_viability|APR_HepG2_MicrotubuleCSK_24h_up|BSK_SAg_Proliferation_down|STM_H9_Viability_norm|TOX21_CAR_Agonist_viabillity|TOX21_CAR_Antagonist_viability|TOX21_PXR_viability|TOX21_RT_HEK293_GLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+"cis-1,2,3,6-Tetrahydrophthalimide",1469-48-3,4.33E-08,9.98E-08,4.332004189,1.75E-07,TOX21_PR_BLA_Antagonist_viability
+"5,5-Diphenylhydantoin",57-41-0,0,0,1.424980997,0,NVS_TR_hDAT|BD
+Thiouracil,141-90-2,3.46E-06,1.48E-05,2.344349392,1.40E-05,MFR|BR|%SiB|BD|IBI|#AE|#ABE|#NS|NSP|NSD|%SiNS|NS-ISI|NSDsd|#SiNS|r|MI
+N-Nitrosomorpholine,59-89-2,5.28E-05,0.001267113,0.416566974,0.000214161,TOX21_RT_HEK293_GLO_08hr_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_24hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+Triphenylphosphine oxide,791-28-6,8.07E-07,4.59E-06,1.760434151,3.28E-06,NVS_GPCR_gOpiateK
+Chlorpheniramine maleate,113-92-8,2.02E-07,1.39E-06,1.44785506,8.19E-07,NVS_ENZ_hES|NVS_GPCR_hDRD1|NVS_GPCR_hM2|NVS_IC_rNaCh_site2|NVS_TR_gDAT|NVS_TR_hDAT|NVS_TR_hNET
+Perfluorodecanoic acid,335-76-2,1.14E-05,4.06E-05,2.816820782,4.64E-05,NVS_GPCR_hAdoRA2a|NVS_GPCR_hOpiate_D1
+Perfluorooctanoic acid,335-67-1,6.59E-05,7.53E-05,8.74721608,0.000267278,TOX21_ERb_BLA_Agonist_viability|TOX21_HRE_BLA_Agonist_viability
+Perfluoroheptanoic acid,375-85-9,2.81E-06,7.47E-06,3.764509197,1.14E-05,APR_HepG2_MitoMass_72h_dn
+Cyclanilide,113136-77-9,1.56E-06,3.59E-06,4.338015906,6.32E-06,TOX21_MMP_rhodamine
+5-(2-Chloro-4-(trifluoromethyl)phenoxy)-2-nitrobenzoic acid,50594-66-6,4.71E-06,3.67E-05,1.283079969,1.91E-05,NCCT_MITO_basal_resp_rate_OCR_dn|NVS_GPCR_hAdoRA2a
+Iodophthalein,386-17-4,0.000157587,0.00079454,1.983375545,0.000639384,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+Gallic acid,149-91-7,7.05E-06,3.97E-06,17.74232178,2.86E-05,TOX21_SSH_3T3_GLI3_Antagonist_viability
+Rhein,478-43-3,3.53E-06,5.52E-05,0.639833957,1.43E-05,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+4-Nitrobenzoic acid,62-23-7,1.44E-08,5.02E-07,0.286937404,5.85E-08,NVS_LGIC_rGABAR_NonSelective
+Terephthalic acid,100-21-0,2.45E-07,1.93E-07,12.71514775,9.94E-07,TOX21_RT_HEPG2_FLO_16hr_ctrl_viability|TOX21_RT_HEPG2_FLO_24hr_viability
+Pyrazolone T,118-47-8,8.65E-08,3.52E-07,2.461056588,3.51E-07,ACEA_AR_agonist_AUC_viability
+Endothal,145-73-3,2.16E-06,3.34E-06,6.471916073,8.77E-06,APR_HepG2_CellLoss_72h_dn|APR_HepG2_MicrotubuleCSK_24h_up|APR_HepG2_NuclearSize_72h_dn|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_SSH_3T3_GLI3_Agonist_viability|TOX21_SSH_3T3_GLI3_Antagonist_viability
+Tamoxifen citrate,54965-24-1,9.52E-07,6.74E-06,1.412683129,3.86E-06,APR_HepG2_MitoMembPot_24h_dn|NVS_GPCR_hDRD1|NVS_GPCR_hM4|NVS_GPCR_hORL1|NVS_GPCR_hOpiate_mu|NVS_IC_rCaBTZCHL|NVS_TR_hDAT|NVS_GPCR_h5HT5A|NVS_GPCR_h5HT7|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NETWORK_BURST_PERCENTAGE
+Tetrac,67-30-1,0.000200697,0.004375637,0.458668162,0.000814293,NVS_GPCR_h5HT7
+Tiratricol,51-24-1,8.45E-06,0.000303929,0.277987613,3.43E-05,TOX21_RT_HEPG2_GLO_00hr_ctrl_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p3_viability
+Hexanedioic acid,124-04-9,0.000299315,0.001716721,1.743524875,0.001214419,ACEA_AR_agonist_AUC_viability|ACEA_AR_antagonist_AUC_viability
+Decanedioic acid,111-20-6,7.97E-06,0.000809441,0.098501001,3.23E-05,ACEA_AR_antagonist_AUC_viability
+Tridecanedioic acid,505-52-2,4.47E-07,2.76E-07,16.18137217,1.81E-06,TOX21_RT_HEK293_FLO_32hr_viability|TOX21_RT_HEK293_GLO_40hr_viability
+"2,4-Dichlorophenoxybutyric acid",94-82-6,1.24E-06,5.13E-06,2.414752276,5.03E-06,NCCT_MITO_basal_resp_rate_OCR_dn|NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|INTER_BURST_INTERVAL_AVG_(SEC)|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG
+Trimethylenediaminetetraacetic acid,1939-36-2,0.000883526,0.00923986,0.95621158,0.00358476,TOX21_ERb_BLA_Agonist_viability|TOX21_PXR_viability
+Pentetic acid,67-43-6,1.20E-06,2.05E-05,0.5846287,4.86E-06,TOX21_CAR_Agonist_viabillity|TOX21_RT_HEPG2_FLO_16hr_ctrl_viability
+"2,4,5-Trichlorophenoxyacetic acid",93-76-5,1.46E-06,1.76E-06,8.267496307,5.91E-06,TOX21_MMP_fitc
+4-Chlorophenoxyacetic acid,122-88-3,2.88E-07,3.24E-05,0.089057563,1.17E-06,ACEA_AR_antagonist_AUC_viability
+Malic acid,6915-15-7,0.001373156,0.018218092,0.753732272,0.005571354,NVS_TR_gDAT
+"2-(1-Chlorocyclopropyl)-1-(2-chlorophenyl)-3-(1H-1,2,4-triazol-1-yl)-2-propanol",120983-64-4,0,0,6.473645691,0,BSK_3C_Proliferation_down|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_16hr_ctrl_viability
+Prothioconazole,178928-70-6,0,0,5.80184226,0,BSK_3C_Proliferation_down|BSK_3C_SRB_down|BSK_4H_SRB_down|BSK_CASM3C_SRB_down|BSK_SAg_Proliferation_down|BSK_hDFCGF_Proliferation_down
+2-Hydroxy-3-phenoxypropyl prop-2-enoate,16969-10-1,0,0,0.141140534,0,TOX21_RT_HEPG2_GLO_08hr_ctrl_viability
+D-Glucitol,50-70-4,0.001780605,0.0082013,2.171125327,0.007224509,BD|#SiNS
+"2,4-Dinitrophenol",51-28-5,1.41E-06,4.53E-05,0.311590144,5.73E-06,TOX21_MMP_rhodamine
+Dinex,131-89-5,1.54E-06,4.83E-06,3.191224611,6.26E-06,TOX21_AR_BLA_Antagonist_viability|TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity|TOX21_CASP3_HEPG2_viability|TOX21_ERR_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_ERa_LUC_VM7_Antagonist_0.1nM_E2_viability|TOX21_H2AX_HTRF_CHO_viability|TOX21_PXR_viability|TOX21_RORg_LUC_CHO_Antagonist_viability|TOX21_RT_HEK293_GLO_16hr_viability|TOX21_RT_HEK293_GLO_40hr_viability|TOX21_RT_HEPG2_GLO_08hr_ctrl_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability
+Rafoxanide,22662-39-1,0.000113497,0.000675756,1.67956079,0.000460497,TOX21_ERa_BLA_Antagonist_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p3_viability|TOX21_p53_BLA_p4_viability
+2-Phenylphenol,90-43-7,0.000478096,0.724755842,0.00659665,0.001939795,SH-S5Y5 viability
+"4,4'-Sulfonylbis[2-(prop-2-en-1-yl)phenol]",41481-66-7,8.26E-06,4.41E-05,1.873705974,3.35E-05,APR_HepG2_MitoMass_24h_dn|NCCT_MITO_basal_resp_rate_OCR_dn|NCCT_MITO_max_resp_rate_OCR_dn|NVS_GPCR_bAdoR_NonSelective|NVS_GPCR_hAdoRA1|NVS_GPCR_hAdoRA2a|NVS_GPCR_hOpiate_mu|NVS_GPCR_rOpiate_NonSelectiveNa|NVS_IC_rCaDHPRCh_L|NVS_TR_gDAT|NVS_TR_hNET|NVS_GPCR_g5HT4|NUMBER_OF_SPIKES_PER_BURST_AVG|BURST_PERCENTAGE_AVG_(SEC)|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ AVG|NUMBER_OF_SPIKES_PER_NETWORK_BURST_ STD|NUMBER_OF_ELECS_PARTICIPATING_IN_BURST_AVG|AREA_UNDER_CROSS_CORRELATION
+"2,3,4,6-Tetrachlorophenol",58-90-2,3.04E-06,4.84E-06,6.289488335,1.23E-05,BSK_3C_Proliferation_down|BSK_3C_SRB_down|BSK_3C_Vis_down|BSK_4H_SRB_down|BSK_LPS_SRB_down|BSK_SAg_Proliferation_down|BSK_SAg_SRB_down|BSK_hDFCGF_Proliferation_down
+"2,3,5,6-Tetrachlorophenol",935-95-5,3.32E-06,1.44E-05,2.304275544,1.35E-05,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+"((3,4-Dihydroxyphenyl)methylene)-Propanedinitrile",118409-57-7,0,0,6.212609841,0,TOX21_MMP_rhodamine
+Quinalizarin,81-61-8,5.95E-06,8.57E-06,6.952173498,2.42E-05,BSK_3C_SRB_down
+Clioquinol,130-26-7,3.09E-06,1.03E-05,2.983082655,1.25E-05,TOX21_AR_BLA_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_PPARg_BLA_antagonist_viability
+"4,6-Dichloro-1,3-benzenediol",137-19-9,0,0,2.704758548,0,TOX21_MMP_ratio_down|TOX21_MMP_rhodamine
+4-Nitrophenol,100-02-7,0,0,16.75875312,0,TOX21_ERR_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PGC_ERR_viability|TOX21_SSH_3T3_GLI3_Agonist_viability
+Nitroxoline,4008-48-4,0,0,1.90648262,0,TOX21_AR_BLA_Antagonist_viability|TOX21_CASP3_CHO_viability|TOX21_ERR_viability|TOX21_PPARd_BLA_Agonist_viability|TOX21_PXR_viability|TOX21_RT_HEPG2_GLO_24hr_ctrl_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability|TOX21_RT_HEPG2_GLO_40hr_viability|TOX21_RXR_BLA_Agonist_viability
+Cloxyquin,130-16-5,2.98E-06,8.49E-06,3.515285288,1.21E-05,TOX21_AR_LUC_MDAKB2_Antagonist_10nM_R1881_viability|TOX21_ERb_BLA_Antagonist_viability|TOX21_PR_BLA_Antagonist_viability|TOX21_PXR_viability
+Hydroquinone,123-31-9,8.98E-06,0.001718619,0.052264774,3.64E-05,NUMBER_OF_SPIKES|MEAN_FIRING_RATE_HZ|NUMBER_OF_BURSTS|NUMBER_OF_SPIKES_PER_BURST_AVG|AREA_UNDER_CROSS_CORRELATION
+C.I. Solvent Yellow 14,842-07-9,0.000282878,0.000911189,3.104495041,0.001147732,ATG_FoxA2_CIS_up|BSK_SAg_Proliferation_down|NCCT_HEK293T_CellTiterGLO|TOX21_Aromatase_Inhibition_viability|TOX21_CAR_Agonist_viabillity|TOX21_ERR_viability|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PGC_ERR_viability|TOX21_PXR_viability
+1-Naphthol,90-15-3,6.63E-07,1.54E-06,4.307435603,2.69E-06,NVS_ENZ_rMAOAC|TOX21_MMP_fitc
+2-Naphthalenol,135-19-3,6.99E-05,0.000426749,1.63791422,0.000283599,NVS_ENZ_rMAOAC|NVS_ENZ_rMAOAP|NVS_ENZ_rMAOBC|NVS_TR_hNET|NVS_TR_rNET|NVS_GPCR_p5HT2C
+"5-(5-Nitro-2-furyl)-1,3,4-oxadiazole-2-ol",2122-86-3,1.44E-08,1.96E-08,7.348296635,5.85E-08,TOX21_SSH_3T3_GLI3_Antagonist_viability
+3-Chloro-4-(dichloromethyl)-5-hydroxy-2(5H)-furanone,77439-76-0,2.88E-08,9.67E-07,0.298302257,1.17E-07,TOX21_AR_BLA_Antagonist_viability|TOX21_RT_HEPG2_GLO_32hr_ctrl_viability
+Bronopol,52-51-7,6.73E-06,3.47E-05,1.941654953,2.73E-05,APR_HepG2_MitoMembPot_24h_dn|NVS_GPCR_bAdoR_NonSelective|NVS_GPCR_rOpiate_NonSelective|NUMBER_OF_SPIKES|NUMBER_OF_BURSTS|BURST_DURATION_AVG_ (SEC)|BURST_PERCENTAGE_AVG_(SEC)|BURST_PERCENTAGE_STD_(SEC)|FULL_WIDTH_AT_HALF_HEIGHT_OF_CROSS_CORRELATION|SYNCHRONY_INDEX
+C.I. Disperse Blue 27,15791-78-3,2.28E-05,3.71E-05,6.141558004,9.24E-05,BSK_3C_Proliferation_down|BSK_CASM3C_Proliferation_down|BSK_hDFCGF_Proliferation_down|BSK_hDFCGF_SRB_down|TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780_viability|TOX21_PXR_viability
+Tris(2-hydroxyethyl) isocyanurate,839-90-7,1.61E-06,2.96E-06,5.457975453,6.55E-06,TOX21_RT_HEK293_FLO_16hr_viability|TOX21_RT_HEK293_FLO_32hr_viability|TOX21_RT_HEPG2_FLO_24hr_viability
+1-Hydroxybenzotriazole,2592-95-2,1.04E-06,0.000575915,0.018024987,4.21E-06,TOX21_AR_BLA_Antagonist_viability|TOX21_ERb_BLA_Agonist_viability|TOX21_ERb_BLA_Antagonist_viability
+CP-544439,230954-09-3,0,0,12.1460602,0,NCCT_MITO_basal_resp_rate_OCR_dn|NCCT_MITO_max_resp_rate_OCR_dn
+Perfluorooctanesulfonic acid,1763-23-1,3.51E-05,0.000397887,0.882348482,0.000142443,APR_HepG2_MitoMass_72h_dn|NVS_GPCR_hAdoRA2a|NVS_GPCR_h5HT5A
+Naphthalene-2-sulfonic acid,120-18-3,0,0,0.013525756,0,SH-S5Y5 neurite outgrowth
+Ensulizole,27503-81-7,2.68E-06,1.29E-05,2.084056667,1.09E-05,TOX21_AP1_BLA_Agonist_viability|TOX21_AR_BLA_Antagonist_viability|TOX21_GR_BLA_Antagonist_viability|TOX21_H2AX_HTRF_CHO_viability|TOX21_HDAC_Inhibition_viability|TOX21_HRE_BLA_Agonist_viability|TOX21_SBE_BLA_Agonist_viability|TOX21_SBE_BLA_Antagonist_viability|TOX21_VDR_BLA_Agonist_viability|TOX21_p53_BLA_p5_viability
+6-Mercaptopurine,50-44-2,1.73E-07,3.76E-06,0.459892851,7.02E-07,TOX21_CAR_Agonist_viabillity|TOX21_ERR_viability|TOX21_PGC_ERR_viability|TOX21_PR_BLA_Agonist_viability|TOX21_PXR_viability|TOX21_SBE_BLA_Agonist_viability|TOX21_SBE_BLA_Antagonist_viability|TOX21_VDR_BLA_antagonist_viability|TOX21_p53_BLA_p2_viability|TOX21_p53_BLA_p4_viability
+2-Mercaptobenzimidazole,583-39-1,7.35E-07,5.74E-07,12.80168947,2.98E-06,TOX21_PR_BLA_Antagonist_viability
+Benzothiazole,95-16-9,0,0,0.01342077,0,SH-S5Y5 neurite outgrowth
+2-Mercaptobenzothiazole,149-30-4,0,0,14.20762084,0,APR_HepG2_MitoMembPot_24h_dn|APR_HepG2_MitoMembPot_72h_dn|NVS_TR_hNET
