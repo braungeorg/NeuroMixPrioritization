@@ -1,11 +1,12 @@
 library(stringr)
+library(devtools)
 
 setwd(str_remove(dirname(rstudioapi::getActiveDocumentContext()$path),"/Code"))
 
 #This is the original data file which is included in httk from Wambaugh et al. 
 chem.physical_and_invitro.data <- read.csv("chem.physical_and_invitro_data.csv")
 
-#Those are the respective values of structural identifiers, molecular weight, plasma fraction unbound, intrinsic clearance, logKoa, pKa
+#Those are the respective values of structural identifiers, molecular weight, plasma fraction unbound, intrinsic clearance, logKow, pKa
 Import_data <- read.csv("SI_Tables/Table_B2.csv")
 
 #Import data into httk - necessary since we use parallel processing and add_chemtable() function in httk is not changing the data table in the package
@@ -31,7 +32,7 @@ for(i in 1:length(Import_data$CAS)){
   z = match(Import_data$CAS[i],chem.physical_and_invitro.data$CAS)
   chem.physical_and_invitro.data$Human.Clint[z] = as.numeric(Import_data$Clint[i])
   chem.physical_and_invitro.data$Human.Funbound.plasma[z] = as.numeric(Import_data$Fub[i])
-  chem.physical_and_invitro.data$logP[z] = as.numeric(Import_data$logKoa[i])
+  chem.physical_and_invitro.data$logP[z] = as.numeric(Import_data$logKow[i])
   chem.physical_and_invitro.data$MW[z] = as.numeric(Import_data$MW[i])
   chem.physical_and_invitro.data$Human.Clint.Reference[z] = Import_data$Clint_Reference[i]
   chem.physical_and_invitro.data$Human.Funbound.plasma.Reference[z] = Import_data$Fub_Reference[i]

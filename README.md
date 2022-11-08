@@ -11,6 +11,9 @@ Uses available CRC data and applies a fit. Further, checks for linearity up to 1
 **3_Mixture_simulation.R**  
 Here, plasma concentration quantiles are calculated, effect data is merged, baseline toxicity is predicted and mixtures are simulated. Mixmedian and Mixrandom are calculated with and without blood-brain-barrier permeability restriction. 
 
+# Code_for_different_endpoints
+These scripts are adapted to allow for use of our workflow with own data and different toxicity endpoints. An example for five compounds is given. 
+
 # httk
 httk with version 2.0.4 from https://github.com/USEPA/CompTox-ExpoCast-httk/releases/tag/2.0.4  
 Needed for pre-configuration
@@ -60,7 +63,7 @@ IC10_Baseline = concentration causing 10 % effect in µM; calculated by using th
 AC10 = concentration causing 10 % (neurotoxic) effect in µM; calculated from merged assay data fit
 AC10_Top = top effect level of fitted curve used for AC10 in %
 AC10_HillSlope = slope of fitted curve used for AC10
-EC50 = concentration causing 50 % (neurotoxic) effect in µM; calculated from merged assay data fit
+AC50 = concentration causing 50 % (neurotoxic) effect in µM; calculated from merged assay data fit
 Endpoint_effect = merged endpoints from the fitted (neurotoxic) assays
 IC10 = concentration causing 10 % (cytotoxic) effect in µM; calculated from merged assay data fit
 IC10_Top = top effect level of fitted curve used for IC10 in %
@@ -182,3 +185,6 @@ CumNr90Effect = how many compounds were needed to result in 90 % total mixture e
 Summary of top contributors per mixture in Mixrandom with CNS restriction (only baseline predictions)
 Frequency_Factor = factor of how often the chemical contributed to causing 90 % of total mixture effect relative to its overall ocurrence 
 TopContributors = respective compounds neededto result in 90 % total mixture effect
+
+# chem.physical_and_invitro_data.csv
+File needed for httk configuration. These are the compounds included in httk version 2.0.4. 

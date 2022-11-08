@@ -1,20 +1,9 @@
 library(httk)
-library(readxl)
 library(dplyr)
-library(tidyverse)
-library(drc)
-library(tcpl)
-library(rlist)
-library(openxlsx)
-library(EnvStats)
-library(xlsx)
 library(doParallel)
-library(foreach)
-library(usethis)
 library(data.table)
 library(deSolve)
 library(doSNOW)
-library(tcltk)
 library(stringr)
 
 setwd(str_remove(dirname(rstudioapi::getActiveDocumentContext()$path),"/Code"))
@@ -84,11 +73,11 @@ exps <- function(x){
 }
 
 #Lee et al. 2021 - equation 11
-calc_logKlipw <- function(logKoa){
-  logKoa*1.01+0.12
+calc_logKlipw <- function(logkow){
+  logkow*1.01+0.12
 }
 
-Final_Data$logKlipw <- sapply(Final_Data$logKoa,calc_logKlipw)
+Final_Data$logKlipw <- sapply(Final_Data$logKow,calc_logKlipw)
 
 #Lee et al. 2021 - equation 14
 calc_logDlipw <- function(logKlipw,Neutral_Form){
@@ -115,7 +104,7 @@ Final_Data$AC10 <- 1:length(Final_Data$CAS)
 Final_Data$AC10 = as.numeric(Final_Data$AC10)
 Final_Data$AC10_Top <- Final_Data$AC10
 Final_Data$AC10_HillSlope <- Final_Data$AC10
-Final_Data$EC50 <- Final_Data$AC10
+Final_Data$AC50 <- Final_Data$AC10
 Final_Data$Endpoint_effect <- c(1:length(Final_Data$CAS))
 Final_Data$IC10 <- Final_Data$AC10
 Final_Data$IC10_Top <- Final_Data$IC10
@@ -130,21 +119,21 @@ for (i in 1:length(Final_Data$CAS)){
     Final_Data$AC10[i] =Effects$log_AC10[z]
     Final_Data$AC10_Top[i] =Effects$Top_curve[z]
     Final_Data$AC10_HillSlope[i] =Effects$Slope[z]
-    Final_Data$EC50[i] =Effects$log_AC50[z]
+    Final_Data$AC50[i] =Effects$log_AC50[z]
     Final_Data$Endpoint_effect[i] = Effects$Endpoints[z]
   } else if (Final_Data$CAS[i] %in% Viability$CAS){
     z <- match(Final_Data$CAS[i],Viability$CAS)
     Final_Data$AC10[i] = Viability$log_AC10[z]
     Final_Data$AC10_Top[i] = Viability$Top_curve[z]
     Final_Data$AC10_HillSlope[i] = Viability$Slope[z]
-    Final_Data$EC50[i] = Viability$log_AC50[z]
+    Final_Data$AC50[i] = Viability$log_AC50[z]
     Final_Data$Endpoint_effect[i] = Viability$Endpoints[z]
   } else {
     Final_Data$AC10[i] = Final_Data$IC10_Baseline[i]
     Final_Data$Endpoint_effect[i] = "Baseline"
     Final_Data$AC10_Top[i] = 100
     Final_Data$AC10_HillSlope[i] = 1
-    Final_Data$EC50[i] = Final_Data$IC10_Baseline[i]-log10(10/(100-10))
+    Final_Data$AC50[i] = Final_Data$IC10_Baseline[i]-log10(10/(100-10))
   }
 }
 
@@ -173,9 +162,14 @@ for(i in 1:length(Final_Data$AC10)){
     Final_Data$Endpoint_effect[i] = Final_Data$Endpoint_cytotox[i]
     Final_Data$AC10_Top[i] = Final_Data$IC10_Top[i]
     Final_Data$AC10_HillSlope[i] = Final_Data$IC10_HillSlope[i]
-    Final_Data$EC50[i] = Final_Data$IC50[i]
+    Final_Data$AC50[i] = Final_Data$IC50[i]
   }
 }
+
+#Transform into linear concentration for SR and TR calculation
+Final_Data$AC10 = exps(Final_Data$AC10)
+Final_Data$IC10 = exps(Final_Data$IC10)
+Final_Data$IC10_Baseline = exps(Final_Data$IC10_Baseline)
 
 #Specificity Ratio SR - high = effects are driven by specific endpoints, not cytotoxicity
 #Baseline is included, but if you filter your results for high SR you should not mix SR based on experimental and baseline values
@@ -183,6 +177,11 @@ Final_Data$SR <- Final_Data$IC10/Final_Data$AC10
 
 #Toxic ratio (TR) is used as a measure in how more toxic experimental cytotoxicity values are compared to baseline predictions
 Final_Data$TR <- Final_Data$IC10_Baseline/Final_Data$IC10
+
+#Result again in logarithmic concentrations for comparison and export into Table_B5
+Final_Data$AC10 = log10(Final_Data$AC10)
+Final_Data$IC10 = log10(Final_Data$IC10)
+Final_Data$IC10_Baseline = log10(Final_Data$IC10_Baseline)
 
 #To allow for later on mass spectormetry analysis, compounds below a molar mass of 80 g/mol were filtered out
 Final_Data = Final_Data[Final_Data$MW>=80,]
@@ -275,8 +274,6 @@ data.table::fwrite(BigMixture,"SI_Tables/Table_B7.csv",row.names = F)
 
 #All calculations are based on Escher et al. 2020
 
-Final_Data = read.csv("SI_Tables/Table_B5.csv")
-
 #No CNS_restriction
 Nr_of_Mixtures <- 100000
 Compounds_per_Mixture <- length(Final_Data$Compound)
@@ -300,8 +297,10 @@ opts <- list(progress=progress)
 cl <- makeCluster(cores)
 doSNOW::registerDoSNOW(cl)
 
-set.seed(18) #you can choose any number or delete this line; needed to get identical results per run (otherwise slightly different due to random functions)
+#Here, you can select the probability of the quantiles of the concentrations (0%,10%,50%,90%)
+#Currently, each quantile is equally likely (25 % for four possibilities)
 Mix_Conc = foreach (i = 1:Nr_of_Mixtures,.combine = "cbind",.options.snow=opts)%dopar%{
+  set.seed(i)
   y = 1:Compounds_per_Mixture
   for(j in 1:Compounds_per_Mixture){
     y[j] = Concentrations_final[j,sample(c(3,4,5,6),size=1,prob = c(0.9,0.0333,0.0333,0.0333))]
@@ -310,62 +309,190 @@ Mix_Conc = foreach (i = 1:Nr_of_Mixtures,.combine = "cbind",.options.snow=opts)%
 }
 stopCluster(cl)
 
+for(c in cores:1){
+  slices = Nr_of_Mixtures/c
+  if(slices %% 2 == 0){
+    cores = c
+    break
+  }
+}
+
+#To allow for fast parallel processing (depending on how many mixtures you want to simulate) a folder will be generated where your data is temporarily stored in a sliced format
+slices = Nr_of_Mixtures/cores
+dir.create("SI_Tables/sliced")
+
 Mix_Conc = as.data.frame(Mix_Conc)
 colnames(Mix_Conc) = Names
 
 Ctot = 1:Nr_of_Mixtures
 Ctot = colSums(Mix_Conc)
 
-Mix_pi <- Mix_Conc
-
-for(i in 1:length(Ctot)){
-  Mix_pi[,i] = Mix_Conc[,i]/Ctot[i]
+Ctot_frame = matrix(ncol=length(Ctot),nrow=Compounds_per_Mixture)
+for(ct in 1:length(Ctot)){
+  Ctot_frame[,ct] = Ctot[ct]
 }
 
-Mix_pi_slopei = Mix_pi*Mix_slopei
+dir.create("SI_Tables/sliced2")
 
-for(i in 1:Nr_of_Mixtures){
-  Mix_pi_slopei[,i] = Mix_pi[,i]*Mix_slopei
+Start = 1
+for(l in 1:cores){
+  fwrite(Ctot_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
+
+Start = 1
+
+for(l in 1:cores){
+  fwrite(Mix_Conc[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_pi = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[,j]/data2[,j]
+  }
+  result
+}
+stopCluster(cl)
+
+Start=1
+for(l in 1:cores){
+  fwrite(Mix_pi[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+Mix_pi_slopei = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data*Mix_slopei
+  result
+}
+stopCluster(cl)
 
 Mix_Slopem = as.numeric(colSums(Mix_pi_slopei))
 Mix_AC10.Mix = as.numeric((0.1/Mix_Slopem))
 
-for(i in 1:length(Mix_AC10.Mix)){
-  Mix_Conc[,i] = Mix_pi[,i]*Mix_AC10.Mix[i]
+Mix_AC10.Mix_frame = matrix(nrow=Compounds_per_Mixture,ncol=Nr_of_Mixtures)
+for(ac in 1:ncol(Mix_AC10.Mix_frame)){
+  Mix_AC10.Mix_frame[,ac] = Mix_AC10.Mix[ac]
 }
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Mix_AC10.Mix_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_Conc = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[,j]*data2[,j]
+  }
+  result
+}
+stopCluster(cl)
 
 Ctot = as.numeric(colSums(Mix_Conc))
 
 Mix_Effecti = Mix_Conc
 Mix_Effectm = 1:Nr_of_Mixtures
 
-Mix_Effecti = Mix_Conc*Mix_slopei
+Start=1
+for(l in 1:cores){
+  fwrite(Mix_Conc[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_Effecti = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data*Mix_slopei
+  result
+}
+stopCluster(cl)
 
 Mix_Effectm = as.numeric(Ctot*colSums(Mix_pi_slopei,na.rm = T))
 
 Mix_Effecti=Mix_Effecti*100
 Mix_Effectm=Mix_Effectm*100
 
-Ordered_Mixtures_Index = Mix_Effecti
-
-for(i in 1:Nr_of_Mixtures){
-  Ordered_Mixtures_Index[,i] = order(Mix_Effecti[,i],decreasing = T)
+Start = 1
+for(l in 1:cores){
+  fwrite(Mix_Effecti[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
 
-Ordered_Mixtures_Effects = Ordered_Mixtures_Index
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
 
-for(i in 1:Nr_of_Mixtures){
-  Ordered_Mixtures_Effects[,i] = Mix_Effecti[Ordered_Mixtures_Index[,i],i]
+Ordered_Mixtures_Index = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = order(data[,j],decreasing = T)
+  }
+  result
+}
+stopCluster(cl)
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Ordered_Mixtures_Index[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
 
-Cumulative_frame = apply(Ordered_Mixtures_Effects,2,cumsum)
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
 
-Cumulative = 1:Nr_of_Mixtures
-
-for(i in 1:Nr_of_Mixtures){
-  Cumulative[i] = match(T,Cumulative_frame[,i]>9)
+Ordered_Mixtures_Effects = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[data2[,j],j]
+  }
+  result
 }
+stopCluster(cl)
+
+Cumulative_frame = apply(as.data.frame(Ordered_Mixtures_Effects),2,cumsum)
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Cumulative_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Cumulative = foreach::foreach(i=1:cores,.combine = "c")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = 1:ncol(data)
+  for(j in 1:slices){
+    result[j] = match(T,data[,j]>9)
+  }
+  result
+}
+stopCluster(cl)
+unlink("SI_Tables/sliced",recursive = T)
+unlink("SI_Tables/sliced2",recursive = T)
+#do.call(file.remove,list(list.files("SI_Tables/sliced",full.names = T)))
 
 Top_Contributors_per_Mixture = matrix(ncol = Nr_of_Mixtures,nrow=max(Cumulative))
 
@@ -420,6 +547,9 @@ colnames(Summary_Contributors) = c("Compound","CAS","Frequency_Factor")
 fwrite(Summary_Mixtures,"SI_Tables/Table_B8.csv",row.names = F)
 fwrite(Summary_Contributors,"SI_Tables/Table_B9.csv",row.names = F)
 
+#save.image("SI_Tables/image_after_woCNS.RData")
+
+########################################################################################################################
 #With CNS restriction
 Nr_of_Mixtures <- 100000
 Compounds_per_Mixture <- length(Final_Data$Compound[Final_Data$CNS!="Non-penetrant"])
@@ -432,6 +562,8 @@ Mix_Nam = Final_Data$Compound[Final_Data$CNS!="Non-penetrant"]
 
 Mix_AC10 = Final_Data$AC10[Final_Data$CNS!="Non-penetrant"]
 
+Concentrations_final = Concentrations_final[Final_Data$CNS!="Non-penetrant",]
+
 Mix_slopei = 0.1/Mix_AC10
 
 Names = paste0("Mixture_",rep(1:Nr_of_Mixtures)) #used as header/name of each mixture
@@ -443,74 +575,203 @@ opts <- list(progress=progress)
 cl <- makeCluster(cores)
 doSNOW::registerDoSNOW(cl)
 
-set.seed(18) #you can choose any number or delete this line; needed to get identical results per run (otherwise slightly different due to random functions)
+#set.seed(18) #you can choose any number or delete this line; needed to get identical results per run (otherwise slightly different due to random functions)
+#Here, you can select the probability of the quantiles of the concentrations (0%,10%,50%,90%)
 Mix_Conc = foreach (i = 1:Nr_of_Mixtures,.combine = "cbind",.options.snow=opts)%dopar%{
+  set.seed(i)
   y = 1:Compounds_per_Mixture
   for(j in 1:Compounds_per_Mixture){
     y[j] = Concentrations_final[j,sample(c(3,4,5,6),size=1,prob = c(0.9,0.0333,0.0333,0.0333))]
   }
   y
 }
+stopCluster(cl)
+
+#save.image("SI_Tables/image_after_CNS.RData")
+
+for(c in cores:1){
+  slices = Nr_of_Mixtures/c
+  if(slices %% 2 == 0){
+    cores = c
+    break
+  }
+}
+
+#To allow for fast parallel processing (depending on how many mixtures you want to simulate) a folder will be generated where your data is temporarily stored in a sliced format
+slices = Nr_of_Mixtures/cores
+dir.create("SI_Tables/sliced")
 
 Mix_Conc = as.data.frame(Mix_Conc)
 colnames(Mix_Conc) = Names
 
-stopCluster(cl)
-
 Ctot = 1:Nr_of_Mixtures
 Ctot = colSums(Mix_Conc)
 
-Mix_pi <- Mix_Conc
-
-for(i in 1:length(Ctot)){
-  Mix_pi[,i] = Mix_Conc[,i]/Ctot[i]
+Ctot_frame = matrix(ncol=length(Ctot),nrow=Compounds_per_Mixture)
+for(ct in 1:length(Ctot)){
+  Ctot_frame[,ct] = Ctot[ct]
 }
 
-Mix_pi_slopei = Mix_pi*Mix_slopei
+dir.create("SI_Tables/sliced2")
 
-for(i in 1:Nr_of_Mixtures){
-  Mix_pi_slopei[,i] = Mix_pi[,i]*Mix_slopei
+Start = 1
+for(l in 1:cores){
+  fwrite(Ctot_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
+
+Start = 1
+
+for(l in 1:cores){
+  fwrite(Mix_Conc[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_pi = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[,j]/data2[,j]
+  }
+  result
+}
+stopCluster(cl)
+
+Start=1
+for(l in 1:cores){
+  fwrite(Mix_pi[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+Mix_pi_slopei = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data*Mix_slopei
+  result
+}
+stopCluster(cl)
 
 Mix_Slopem = as.numeric(colSums(Mix_pi_slopei))
 Mix_AC10.Mix = as.numeric((0.1/Mix_Slopem))
 
-for(i in 1:length(Mix_AC10.Mix)){
-  Mix_Conc[,i] = Mix_pi[,i]*Mix_AC10.Mix[i]
+Mix_AC10.Mix_frame = matrix(nrow=Compounds_per_Mixture,ncol=Nr_of_Mixtures)
+for(ac in 1:ncol(Mix_AC10.Mix_frame)){
+  Mix_AC10.Mix_frame[,ac] = Mix_AC10.Mix[ac]
 }
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Mix_AC10.Mix_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_Conc = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[,j]*data2[,j]
+  }
+  result
+}
+stopCluster(cl)
 
 Ctot = as.numeric(colSums(Mix_Conc))
 
 Mix_Effecti = Mix_Conc
 Mix_Effectm = 1:Nr_of_Mixtures
 
-Mix_Effecti = Mix_Conc*Mix_slopei
+Start=1
+for(l in 1:cores){
+  fwrite(Mix_Conc[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
+}
+
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Mix_Effecti = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data*Mix_slopei
+  result
+}
+stopCluster(cl)
 
 Mix_Effectm = as.numeric(Ctot*colSums(Mix_pi_slopei,na.rm = T))
 
 Mix_Effecti=Mix_Effecti*100
 Mix_Effectm=Mix_Effectm*100
 
-Ordered_Mixtures_Index = Mix_Effecti
-
-for(i in 1:Nr_of_Mixtures){
-  Ordered_Mixtures_Index[,i] = order(Mix_Effecti[,i],decreasing = T)
+Start = 1
+for(l in 1:cores){
+  fwrite(Mix_Effecti[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
 
-Ordered_Mixtures_Effects = Ordered_Mixtures_Index
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
 
-for(i in 1:Nr_of_Mixtures){
-  Ordered_Mixtures_Effects[,i] = Mix_Effecti[Ordered_Mixtures_Index[,i],i]
+Ordered_Mixtures_Index = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = order(data[,j],decreasing = T)
+  }
+  result
+}
+stopCluster(cl)
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Ordered_Mixtures_Index[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced2/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
 
-Cumulative_frame = apply(Ordered_Mixtures_Effects,2,cumsum)
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
 
-Cumulative = 1:Nr_of_Mixtures
+Ordered_Mixtures_Effects = foreach::foreach(i=1:cores,.combine = "cbind")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  data2 = as.data.frame(data.table::fread(paste0("SI_Tables/sliced2/",i,".csv")))
+  result = data
+  for(j in 1:slices){
+    result[,j] = data[data2[,j],j]
+  }
+  result
+}
+stopCluster(cl)
 
-for(i in 1:Nr_of_Mixtures){
-  Cumulative[i] = match(T,Cumulative_frame[,i]>9)
+Cumulative_frame = apply(as.data.frame(Ordered_Mixtures_Effects),2,cumsum)
+
+Start = 1
+for(l in 1:cores){
+  fwrite(Cumulative_frame[,(Start:(Start+slices-1))],paste0("SI_Tables/sliced/",l,".csv"),row.names = F)
+  Start=Start+slices
 }
 
+cl <- makeCluster(cores)
+doSNOW::registerDoSNOW(cl)
+
+Cumulative = foreach::foreach(i=1:cores,.combine = "c")%dopar%{
+  data = as.data.frame(data.table::fread(paste0("SI_Tables/sliced/",i,".csv")))
+  result = 1:ncol(data)
+  for(j in 1:slices){
+    result[j] = match(T,data[,j]>9)
+  }
+  result
+}
+stopCluster(cl)
+unlink("SI_Tables/sliced",recursive = T)
+unlink("SI_Tables/sliced2",recursive = T)
 
 Top_Contributors_per_Mixture = matrix(ncol = Nr_of_Mixtures,nrow=max(Cumulative))
 
@@ -561,7 +822,6 @@ for(i in 1:length(Summary_Contributors$V1)){
 Summary_Contributors[,3] = as.numeric(unlist(Factor_Frequency))
 
 colnames(Summary_Contributors) = c("Compound","CAS","Frequency_Factor")
-
 
 fwrite(Summary_Mixtures,"SI_Tables/Table_B10.csv",row.names = F)
 fwrite(Summary_Contributors,"SI_Tables/Table_B11.csv",row.names = F)

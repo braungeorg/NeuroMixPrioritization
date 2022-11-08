@@ -1,21 +1,11 @@
 library(httk)
-library(readxl)
 library(dplyr)
-library(tidyverse)
 library(drc)
 library(tcpl)
-library(rlist)
-library(openxlsx)
 library(EnvStats)
-library(xlsx)
-library(doParallel)
-library(foreach)
-library(usethis)
 library(data.table)
-library(deSolve)
-library(doSNOW)
-library(tcltk)
 library(stringr)
+
 setwd(str_remove(dirname(rstudioapi::getActiveDocumentContext()$path),"/Code"))
 
 
