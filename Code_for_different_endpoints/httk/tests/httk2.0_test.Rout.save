@@ -1,0 +1,205 @@
+
+R Under development (unstable) (2021-04-27 r80234) -- "Unsuffered Consequences"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #R CMD BATCH --no-timing --no-restore --no-save httk2.0_test.R httk2.0_test.Rout
+> library(httk)
+> 
+> #head(solve_pbtk(chem.name="Terbufos"))
+> #head(solve_model(chem.name="Terbufos",model="pbtk",dosing=list(
+> #                    initial.dose = 1, # Assume dose is in mg/kg BW/day  
+> #                    doses.per.day=NULL,
+> #                    dosing.matrix = NULL,
+> #                    daily.dose = NULL)))
+> 
+> dm <- matrix(c(0,1,2,5,5,5),nrow=3)
+> colnames(dm) <- c("time","dose")
+> solve_pbtk(chem.name="Methenamine",dosing.matrix=dm,dose=NULL,daily.dose=NULL)[190:201,]
+Human amounts returned in umol and concentration returned in uM units.
+AUC is area under plasma concentration in uM * days units with 
+Rblood2plasma = 0.703.
+       time Agutlumen  Cgut Cliver  Cven Clung  Cart  Crest Ckidney Cplasma
+ [1,] 1.948       0.0 14.89  35.65 12.66 11.96 12.67  9.636   30.46   18.01
+ [2,] 1.958       0.0 14.65  35.07 12.45 11.76 12.46  9.478   29.96   17.72
+ [3,] 1.969       0.0 14.41  34.49 12.25 11.57 12.26  9.323   29.47   17.43
+ [4,] 1.979       0.0 14.17  33.93 12.05 11.38 12.05  9.170   28.99   17.14
+ [5,] 1.990       0.0 13.94  33.37 11.85 11.19 11.86  9.020   28.51   16.86
+ [6,] 2.000       0.0 13.71  32.82 11.66 11.01 11.66  8.872   28.05   16.58
+ [7,] 2.000    2495.0 14.88  32.83 11.65 11.01 11.66  8.872   28.05   16.58
+ [8,] 2.010    1448.0 99.62 209.00 38.82 36.59 38.31 17.220   90.77   55.23
+ [9,] 2.021     839.3 86.56 195.10 46.67 44.05 46.48 27.440  111.20   66.40
+[10,] 2.031     486.7 77.35 178.40 50.13 47.34 50.04 33.420  120.00   71.33
+[11,] 2.042     282.2 71.50 167.30 51.73 48.85 51.69 36.620  124.10   73.60
+[12,] 2.052     163.6 67.67 159.70 52.28 49.37 52.27 38.200  125.60   74.38
+      Atubules Ametabolized   AUC
+ [1,]     4309            0 71.57
+ [2,]     4320            0 71.76
+ [3,]     4331            0 71.94
+ [4,]     4342            0 72.12
+ [5,]     4352            0 72.30
+ [6,]     4363            0 72.47
+ [7,]     4363            0 72.47
+ [8,]     4385            0 72.87
+ [9,]     4423            0 73.52
+[10,]     4467            0 74.24
+[11,]     4512            0 74.99
+[12,]     4559            0 75.76
+Warning messages:
+1: In parameterize_pbtk(chem.cas = NULL, chem.name = "Methenamine",  :
+  Clint is provided as a distribution.
+2: In predict_partitioning_schmitt(parameters = schmitt.params, species = species,  :
+  Membrane affintity (MA) predicted with method of Yun and Edginton (2013)
+3: In parameterize_pbtk(chem.cas = NULL, chem.name = "Methenamine",  :
+  Funbound.plasma adjusted for in vitro partioning (Pearce, 2017).
+4: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+5: In calc_rblood2plasma(chem.cas = chem.cas, species = species, adjusted.Funbound.plasma = adjusted.Funbound.plasma,  :
+  Rblood2plasma has been recalculated.
+6: In available_rblood2plasma(chem.cas = chem.cas, species = species,  :
+  Human Rblood2plasma calculated with calc_rblood2plasma.
+> solve_model(chem.name="Methenamine",model="pbtk",dosing=list(
++   initial.dose =NULL,
++   doses.per.day=NULL,
++   daily.dose=NULL,
++   dosing.matrix=dm))[190:201,]
+Human amounts returned in umol and concentration returned in uM units.
+AUC is area under plasma concentration in uM * days units with 
+Rblood2plasma = 0.703.
+       time Agutlumen  Cgut Cliver  Cven Clung  Cart  Crest Ckidney Cplasma
+ [1,] 1.948       0.0 14.89  35.65 12.66 11.96 12.67  9.636   30.46   18.01
+ [2,] 1.958       0.0 14.65  35.07 12.45 11.76 12.46  9.478   29.96   17.72
+ [3,] 1.969       0.0 14.41  34.49 12.25 11.57 12.26  9.323   29.47   17.43
+ [4,] 1.979       0.0 14.17  33.93 12.05 11.38 12.05  9.170   28.99   17.14
+ [5,] 1.990       0.0 13.94  33.37 11.85 11.19 11.86  9.020   28.51   16.86
+ [6,] 2.000       0.0 13.71  32.82 11.66 11.01 11.66  8.872   28.05   16.58
+ [7,] 2.000    2495.0 14.88  32.83 11.65 11.01 11.66  8.872   28.05   16.58
+ [8,] 2.010    1448.0 99.62 209.00 38.82 36.59 38.31 17.220   90.77   55.23
+ [9,] 2.021     839.3 86.56 195.10 46.67 44.05 46.48 27.440  111.20   66.40
+[10,] 2.031     486.7 77.35 178.40 50.13 47.34 50.04 33.420  120.00   71.33
+[11,] 2.042     282.2 71.50 167.30 51.73 48.85 51.69 36.620  124.10   73.60
+[12,] 2.052     163.6 67.67 159.70 52.28 49.37 52.27 38.200  125.60   74.38
+      Atubules Ametabolized   AUC
+ [1,]     4309            0 71.57
+ [2,]     4320            0 71.76
+ [3,]     4331            0 71.94
+ [4,]     4342            0 72.12
+ [5,]     4352            0 72.30
+ [6,]     4363            0 72.47
+ [7,]     4363            0 72.47
+ [8,]     4385            0 72.87
+ [9,]     4423            0 73.52
+[10,]     4467            0 74.24
+[11,]     4512            0 74.99
+[12,]     4559            0 75.76
+Warning messages:
+1: In parameterize_pbtk(chem.cas = NULL, chem.name = "Methenamine",  :
+  Clint is provided as a distribution.
+2: In predict_partitioning_schmitt(parameters = schmitt.params, species = species,  :
+  Membrane affintity (MA) predicted with method of Yun and Edginton (2013)
+3: In parameterize_pbtk(chem.cas = NULL, chem.name = "Methenamine",  :
+  Funbound.plasma adjusted for in vitro partioning (Pearce, 2017).
+4: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+5: In calc_rblood2plasma(chem.cas = chem.cas, species = species, adjusted.Funbound.plasma = adjusted.Funbound.plasma,  :
+  Rblood2plasma has been recalculated.
+6: In available_rblood2plasma(chem.cas = chem.cas, species = species,  :
+  Human Rblood2plasma calculated with calc_rblood2plasma.
+>   
+> #head(solve_pbtk(chem.name="Terbufos",iv.dose=TRUE))
+> #
+> #solve_model(chem.name="Besonprodil",model="pbtk",dosing=list(
+> #  initial.dose =NULL,
+> #  doses.per.day=4,
+> #  daily.dose=1,
+> #  dosing.matrix=NULL))[190:205,]
+> #solve_pbtk(chem.name="Besonprodil",daily.dose=1,dose=NULL,doses.per.day=4)[190:205,]
+> #
+> #
+> #calc_analytic_css(chem.name="Betaxolol")
+> #calc_analytic_css(chem.name="Tacrine",model="pbtk")
+> #calc_analytic_css(chem.name="Dicofol",model="1compartment")
+> #calc_analytic_css(chem.name="Diflubenzuron",model="3compartment")
+> #calc_analytic_css(chem.name="Theobromine",model="3compartmentss")
+> 
+> #head(solve_1comp(chem.name="Terbufos",daily.dose=NULL,dose=1))
+> #head(solve_1comp(chem.name="Terbufos",daily.dose=NULL,dose=1,iv.dose=TRUE))
+> solve_1comp(chem.name="Methenamine",dosing.matrix=dm,dose=NULL,daily.dose=NULL)[190:201,]
+Human volume of distribution returned in units of L/kg BW.
+Human amounts returned in umol and concentration returned in uM units.
+AUC is area under plasma concentration in uM * days units with 
+Rblood2plasma = 0.703.
+       time Agutlumen Ccompartment Ametabolized   AUC
+ [1,] 1.948       0.0        16.49         4374 69.15
+ [2,] 1.958       0.0        16.20         4385 69.32
+ [3,] 1.969       0.0        15.92         4395 69.49
+ [4,] 1.979       0.0        15.64         4406 69.65
+ [5,] 1.990       0.0        15.37         4416 69.81
+ [6,] 2.000       0.0        15.10         4426 69.97
+ [7,] 2.000    2495.0        15.14         4426 69.97
+ [8,] 2.010    1448.0        42.52         4446 70.28
+ [9,] 2.021     839.3        57.83         4479 70.81
+[10,] 2.031     486.7        66.13         4521 71.46
+[11,] 2.042     282.2        70.37         4566 72.18
+[12,] 2.052     163.6        72.28         4613 72.92
+Warning messages:
+1: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+2: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+3: In calc_rblood2plasma(chem.cas = chem.cas, species = species, adjusted.Funbound.plasma = adjusted.Funbound.plasma,  :
+  Rblood2plasma has been recalculated.
+4: In available_rblood2plasma(chem.cas = chem.cas, chem.name = chem.name,  :
+  Human Rblood2plasma calculated with calc_rblood2plasma.
+> solve_1comp(chem.name="Besonprodil",daily.dose=1,dose=NULL,doses.per.day=4)[190:205,]
+Human volume of distribution returned in units of L/kg BW.
+Human amounts returned in umol and concentration returned in uM units.
+AUC is area under plasma concentration in uM * days units with 
+Rblood2plasma = 0.674.
+       time Agutlumen Ccompartment Ametabolized   AUC
+ [1,] 1.885 3.572e-02        1.638        48.06 1.708
+ [2,] 1.896 2.071e-02        1.635        48.54 1.725
+ [3,] 1.906 1.201e-02        1.633        49.02 1.742
+ [4,] 1.917 6.963e-03        1.630        49.50 1.759
+ [5,] 1.927 4.038e-03        1.627        49.97 1.776
+ [6,] 1.938 2.341e-03        1.625        50.45 1.793
+ [7,] 1.948 1.357e-03        1.622        50.93 1.810
+ [8,] 1.958 7.871e-04        1.619        51.40 1.827
+ [9,] 1.969 4.564e-04        1.617        51.88 1.844
+[10,] 1.979 2.646e-04        1.614        52.35 1.860
+[11,] 1.990 1.535e-04        1.611        52.82 1.877
+[12,] 2.000 8.898e-05        1.609        53.29 1.894
+[13,] 2.000 4.262e+01        1.609        53.30 1.894
+[14,] 2.010 2.473e+01        1.706        53.78 1.911
+[15,] 2.021 1.434e+01        1.761        54.29 1.929
+[16,] 2.031 8.313e+00        1.792        54.81 1.948
+Warning messages:
+1: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+2: In parameterize_schmitt(chem.cas = chem.cas, chem.name = chem.name,  :
+  Fraction unbound is provided as a distribution.
+3: In calc_rblood2plasma(chem.cas = chem.cas, species = species, adjusted.Funbound.plasma = adjusted.Funbound.plasma,  :
+  Rblood2plasma has been recalculated.
+4: In available_rblood2plasma(chem.cas = chem.cas, chem.name = chem.name,  :
+  Human Rblood2plasma calculated with calc_rblood2plasma.
+> #
+> #head(solve_3comp(chem.name="Terbufos",daily.dose=NULL,dose=1))
+> #head(solve_3comp(chem.name="Terbufos",daily.dose=NULL,dose=1,iv.dose=TRUE))
+> #solve_3comp(chem.name="Methenamine",dosing.matrix=dm,dose=NULL,daily.dose=NULL)[190:201,]
+> #solve_3comp(chem.name="Besonprodil",daily.dose=1,dose=NULL,doses.per.day=4)[190:205,]
+> 
+> quit("no")

@@ -1,0 +1,7 @@
+Compound,CAS,MW,MW_Reference,Intake_rate,Intake_rate_Reference,Fub,Fub_Reference,Clint,Clint_Reference,pKa_Acceptor,pKa_Acceptor_Reference,pKa_Donor,pKa_Donor_Reference,logKow,logKow_Reference,Neutral_Form,Neutral_Form_Reference
+"1,1-Dimethylpiperidinium chloride",24307-26-4,149.66,U.S. EPA CompTox Dashboard,8.51E-09,Wambaugh 2014,0.65,OPERA (0.47),0,OPERA (0.64),None,Sipes 2017,None,Sipes 2017,-2.34,ACD/Labs Consensus logP,0,ACD/Labs GALAS
+Didodecyldimethylammonium bromide,3282-73-3,462.645,U.S. EPA CompTox Dashboard,3.24E-07,Wambaugh 2014,0.03,OPERA (0.69),15.62,OPERA (0.61),None,Sipes 2017,None,Sipes 2017,4.24,ACD/Labs Consensus logP,0,ACD/Labs GALAS
+Rotenone,83-79-4,41.073,U.S. EPA CompTox Dashboard,2.91E-06,U.S. EPA CompTox Dashboard,0.78,OPERA (0.62),1.66,OPERA (0.54),#NV,ACD/Labs GALAS,#NV,ACD/Labs GALAS,1.69,ACD/Labs Consensus logP,1,ACD/Labs GALAS
+Famoxadone,131807-57-3,374.396,U.S. EPA CompTox Dashboard,2.18E-08,Wambaugh 2014,0.013506667,Wambaugh 2019,15.44,Wambaugh 2019,-1.32,Sipes 2017,14.26,Wambaugh 2019,4.76,ACD/Labs Consensus logP,1,ACD/Labs GALAS
+Tibrofan,15686-72-3,439.95,U.S. EPA CompTox Dashboard,2.88E-07,Wambaugh 2014,0.03,OPERA (0.69),15.35,OPERA (0.62),None,Sipes 2017,10.99,Sipes 2017,4.72,ACD/Labs Consensus logP,1,ACD/Labs GALAS
+Coumaphos,56-72-4,362.76,U.S. EPA CompTox Dashboard,1.17E-07,Wambaugh 2014,0.291000097,Wambaugh 2019,30.5,Wambaugh 2019,None,Sipes 2017,None,Sipes 2017,3.86,ACD/Labs Consensus logP,1,ACD/Labs GALAS
